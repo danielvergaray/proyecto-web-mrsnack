@@ -1,0 +1,1428 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+:root {
+    --paddingLateral: 8em;
+    --padding-top: 100px;
+    /*Para que la info no quede debajo de la nav bar */
+    --altura-menu-mobile: height: 80px;
+}
+
+/* VERSION DESKTOP --------  */
+
+/* INDEX */
+
+.mobile__cabecera-container,
+.favoritos__fi,
+.favoritos__fd,
+.productos__saludables-mobile,
+.almendras__boton-mobile,
+.favoritos-carrusel-mobile,
+.mobile__saludables-productos,
+.menu-desplegable-mobile {
+    display: none;
+}
+
+.desktop__cabecera {
+    display: flex;
+    background-color: black;
+    height: 3em;
+    padding: 3em;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+}
+
+.desktop__cabecera nav ul {
+    width: 90vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.desktop__cabecera nav ul li {
+    list-style: none;
+}
+
+.desktop__cabecera a {
+    scale: 0.45;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.desktop__cabecera nav a:hover {
+    background-color: blue;
+}
+
+.desktop__cabecera form {
+    display: flex;
+}
+
+.buscar-contenedor {
+    padding-left: 100px;
+}
+
+.buscar {
+    font-size: 21px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.carrito {
+    padding: 0 125px;
+    font-size: 25px;
+}
+
+.carousel1 {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+        url("../imagenes/index/imagenHero1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.carousel2 {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+        url("../imagenes/saludables/frutosSecos.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.carousel2 a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.carousel-caption h5 {
+    font-size: 4rem;
+    position: relative;
+    top: -90px;
+}
+
+.texto-principal h5 {
+    position: relative;
+    top: -150px;
+}
+
+.texto-principal-saludables h5 {
+    position: relative;
+    top: -150px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    scale: 1.5;
+    font-weight: 1000;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 50px !important;
+    height: 6px;
+    margin-right: 10px;
+    margin-left: 10px;
+    opacity: .9;
+}
+
+/* .background__main-container {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+        url("../imagenes/index/imagenHero1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+} */
+
+/* .background__main-principal {
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+/* .background__main-principal a {
+
+    padding-top: 70px;
+    color: white;
+    font-size: 60px;
+    text-decoration: none;
+    padding-left: 20px;
+    height: fit-content;
+} */
+
+/* .background__main-principal a:nth-child(3) {
+    padding-right: 20px;
+    height: fit-content;
+    width: fit-content;
+    padding-left: 0;
+} */
+
+.hero__container,
+.hero__texto-saludables {
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    height: fit-content;
+}
+
+.hero__texto-container,
+.hero__texto-saludables {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero__texto-saludables {
+    margin: auto;
+    width: 70%;
+    position: relative;
+    top: 30px;
+    line-height: 80px;
+
+}
+
+.hero__texto-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.hero__links {
+    padding-right: .5em;
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+    height: 200px;
+}
+
+.hero__links a {
+    padding: 1em 0;
+}
+
+.hero__links a span {
+    background-color: #ffff;
+    width: 50px;
+    height: 6px;
+    display: flex;
+}
+
+.carousel-contenedor {
+    background-color: rgba(232, 232, 147, 0.801);
+    color: white;
+    text-align: center;
+    height: 70vh;
+
+}
+
+
+.carousel-indicators button:hover {
+    opacity: .3;
+}
+
+
+
+.section__favoritos {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    color: white;
+    text-align: center;
+    height: 80vh;
+}
+
+.section__favoritos h2 {
+    font-size: 40px;
+    padding: 1em 0 1em;
+    color: black;
+}
+
+.section__favoritos-imagenes {
+    display: flex;
+    margin: auto 0;
+    padding-bottom: 90px;
+}
+
+.section__favoritos-imagenes a {
+    text-decoration: none;
+    color: white;
+    padding-top: 25px;
+}
+
+.section__favoritos-imagenes a:hover {
+    scale: 1.2;
+}
+
+.section__favoritos-imagenes img {
+    width: 150px;
+    height: 200px;
+}
+
+.section__favoritos-imagenes div:first-child img {
+    width: 200px;
+}
+
+.section__favoritos-imagenes div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+}
+
+
+.extra__container {
+    padding: 2em .5em;
+}
+
+.extra__container p {
+    color: white;
+}
+
+.extra__imagenes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.extra__izquierda {
+    grid-column: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+        url("../imagenes/index/catering.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 47vw;
+    margin: auto;
+    padding: 8em 3em 6em;
+}
+
+.extra__izquierda p,
+.extra__derecha p {
+    padding: 2em 0;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.extra__izquierda button,
+.extra__derecha button {
+    padding: 1em;
+    font-size: 25px;
+    margin: auto;
+    letter-spacing: .1em;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.extra__derecha {
+    grid-column: 2;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+        url("../imagenes/index/tienda.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 47vw;
+    margin: auto;
+    padding: 8em 3em 6em 3em;
+}
+
+.extra__izquierda h2,
+.extra__derecha h2 {
+    color: white;
+}
+
+.extra__izquierda button:hover,
+.extra__derecha button:hover {
+    background-color: #917236;
+    border: #917236;
+}
+
+.varios__container {
+    background-color: black;
+    display: flex;
+    padding: 6em;
+    justify-content: space-around;
+}
+
+.varios___imagenes {
+    text-align: center;
+    overflow: hidden;
+    /* Para que el zoom se haga dentro del recuadro de la imagen*/
+}
+
+.varios__container p {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+.varios__desktop-item {
+    width: 17em;
+    height: 19em;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.varios__desktop-item:hover {
+    transform: scale(1.2);
+}
+
+.varios__hover-imagenes:hover>.varios__hover-texto {
+    /* Texto se vuelve blanco cuando paso el mouse por la imagen*/
+    color: white;
+}
+
+.footer-container {
+    background-color: #d9d9d9;
+    text-align: center;
+}
+
+.footer-redes {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 15em;
+    font-size: 2em;
+}
+
+.footer-redes i {
+    color: black;
+}
+
+.footer-contacto {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 160px;
+}
+
+.footer-container h2 {
+    font-size: 35px;
+    padding-top: 20px;
+}
+
+.footer-contacto a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* SALUDABLES */
+
+.main__container-saludables {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+        url("../imagenes/saludables/frutosSecos.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.saludables__container-productos {
+    background-color: #d9d9d9;
+    padding: 2em;
+}
+
+.saludables__container-productos a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-top: 1em;
+}
+
+.saludables__container-productos h1 {
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
+
+.productosSaludables-3img {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 4em 0;
+}
+
+.almendras:hover,
+.pecanas:hover,
+.nueces:hover,
+.castanas:hover,
+.mani:hover {
+    scale: 1.2;
+}
+
+.almendras {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.almendras img {
+    width: 200px;
+    height: 260px;
+}
+
+.almendras a,
+.pecanas a,
+.nueces a,
+.castanas a,
+.mani a {
+    display: flex;
+    justify-content: center;
+}
+
+.pecanas img,
+.mani img {
+    width: 300px;
+    height: 260px;
+}
+
+.pecanas {
+    grid-column: 2;
+}
+
+.nueces {
+    grid-column: 3;
+}
+
+.nueces img {
+    width: 200px;
+    height: 260px;
+}
+
+.productosSaludables-2img {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 2em 0 4em 0;
+}
+
+.castanas {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mani {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.combos__saludables {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3em;
+    align-items: center;
+}
+
+.combos__saludables h2 {
+    color: white;
+}
+
+.combos__saludables button {
+    font-size: 20px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.combos__saludables button:hover {
+    opacity: .8;
+    border: 1px solid blue;
+}
+
+/* CONTACTO */
+
+.contacto__container {
+    background-image: url(../imagenes/contacto/fondo.jpg);
+    padding: 8em 0;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.contacto__columnaIzquierda {
+    grid-column: 1;
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+
+.contacto__central {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    grid-column: 2;
+    color: white;
+}
+
+.contacto__columnaCentral {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    box-shadow: 7px 13px 37px #000;
+    background-color: #24303c;
+}
+
+.contacto__columnaCentral h1 {
+    font-size: 25px;
+    padding-top: 15px;
+}
+
+.contacto__columnaCentral label {
+    padding-top: 18px;
+    font-size: 20px;
+}
+
+.contacto__columnaCentral input {
+    font-size: 17px;
+    margin: 20px;
+    padding: .5em;
+}
+
+.botonFormulario {
+    cursor: pointer;
+}
+
+.botonFormulario:hover {
+    opacity: .5;
+}
+
+.mensaje {
+    height: 100px;
+}
+
+.contacto__columnaDerecha {
+    grid-column: 3;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    flex-direction: column;
+    font-size: 25px;
+    padding: 2em;
+}
+
+.contacto__columnaDerecha h2 {
+    font-size: 20px;
+    font-weight: bold
+}
+
+/* ALMENDRAS */
+
+
+.almendras__container {
+    padding-top: var(--padding-top);
+    /*Para que la info no quede debajo de la navBar */
+    display: flex;
+    flex-direction: column;
+    background-color: #0000;
+}
+
+.almendras__barraSuperior {
+    padding: 1em 0 0 1em;
+    word-spacing: 15px;
+}
+
+.almendras__barraSuperior a {
+    text-decoration: none;
+    color: black;
+}
+
+.almendras__hero {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 2em;
+}
+
+.almendras__img {
+    grid-column: 1;
+}
+
+.almendras__img img {
+    width: 90%;
+    padding: 2em;
+}
+
+.almendras__info {
+    grid-column: 2;
+    letter-spacing: 2px;
+    padding: 2em;
+}
+
+.almendras__info h1 {
+    font-size: 30px;
+    padding-bottom: 10px;
+    width: 80%;
+}
+
+.almendras__info h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.almendras__info i {
+    cursor: pointer;
+}
+
+.almendras__info h3 {
+    font-size: 15px;
+    padding: 10px 0px;
+    text-decoration: underline;
+}
+
+.almendras__info ul {
+    list-style: circle;
+    line-height: 20px;
+    padding-left: 20px;
+    opacity: 0.6;
+    padding-bottom: 25px;
+}
+
+.almendras__precio {
+    display: flex;
+    justify-content: space-between;
+    color: red;
+    font-size: 30px;
+    padding-top: 25px;
+}
+
+.almendras__precio p {
+    padding-right: 150px;
+}
+
+.almendras__boton {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.almendras__boton button {
+    font-size: 20px;
+    width: 100%;
+    padding: 1em;
+    background-color: orange;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.almendras__boton button:hover {
+    background-color: orangered;
+}
+
+/* COMBOS */
+.combos__container {
+    padding-top: var(--padding-top);
+    /*Para que la info no quede debajo de la navBar */
+    background-color: #fff;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.combos__titulo {
+    padding: 2em;
+    text-align: center;
+    font-size: 20px;
+}
+
+.combos__hero {
+    display: flex;
+    padding: 2em;
+    justify-content: space-around;
+}
+
+.combos__producto {
+    width: 300px;
+}
+
+.combos__producto h2 {
+    padding: 0.5em;
+    color: red;
+}
+
+.combos__producto p {
+    padding: 0.2em 1em;
+    opacity: 0.6;
+    max-width: 90%;
+}
+
+.combos__producto h3 {
+    color: red;
+    text-align: right;
+    font-size: 2em;
+    padding-top: .1em;
+    padding-left: 2em;
+}
+
+.combos__producto a {
+    width: 300px;
+    height: 300px;
+}
+
+.combos__producto a img {
+    width: 300px;
+    height: 300px;
+    border: 1px black solid;
+}
+
+.combos__producto a img:hover {
+    scale: 1.1;
+}
+
+.combos__producto button {
+    font-size: 1.3em;
+    background-color: orange;
+    padding: .5em;
+    cursor: pointer;
+}
+
+.combos__producto button:hover {
+    background-color: orangered;
+}
+
+
+/* VERSION MOBILE --------  */
+
+@media (max-width: 321px) {
+
+    .desktop__cabecera,
+    .background__main-principal a:nth-child(3),
+    .background__main-principal a:first-child,
+    .extra__izquierda p,
+    .extra__derecha p,
+    .extra__izquierda button,
+    .extra__derecha button,
+    .saludables__container-productos,
+    .almendras__barraSuperior,
+    .almendras__precio h4,
+    .almendras__boton,
+    .section__favoritos {
+        display: none;
+    }
+
+    .favoritos-carrusel-mobile,
+    .mobile__saludables-productos {
+        display: block;
+    }
+
+    .menu-desplegable-mobile {
+
+        z-index: 500;
+        display: block;
+        position: fixed;
+        top: 100px;
+        background-color: rgba(0, 0, 0, 0.9);
+        list-style: none;
+        height: 0;
+        text-align: center;
+        line-height: 50px;
+        /* padding-top: 30%; */
+        width: 100vw;
+        transition: all 2s;
+
+    }
+    .menu-desplegable-mobile li{
+        display: none;
+    }
+    .menu-desplegable-mobile li a{
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        display: none;
+        z-index: 500;
+    }
+
+    #check{
+        display: none;
+    }
+    #check:checked ~ .menu-desplegable-mobile{
+        height: 100vh;
+        
+    }
+    #check:checked ~ .menu-desplegable-mobile li{
+        display: block;
+        
+    }
+
+    .mobile__cabecera-container {
+        display: flex;
+        justify-content: space-between;
+        padding: .5em;
+        width: 100vw;
+        align-items: center;
+        background-color: #000;
+        height: 80px;
+        
+    }
+
+    .mobile__cabecera-logo {
+        width: fit-content;
+        padding-left: 1em;
+    }
+
+    .mobile__cabecera-logo img {
+        width: 60px;
+        height: 60px;
+
+    }
+
+    .mobile__carrito {
+        width: fit-content;
+        color: white;
+        padding-right: 2.5em;
+
+    }
+
+    .mobile__cabecera-hamburguesa {
+        padding-right: 20px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        height: 3px;
+
+    }
+
+    .carousel-contenedor {
+        background-color: red;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .carousel-caption h5 {
+        font-size: 2rem;
+        /* No modificar*/
+
+    }
+
+    .texto-principal-saludables h5 {}
+
+    .producto-favoritos-nombre {
+        color: white;
+        font-size: 1.5rem;
+        padding-top: 10px;
+    }
+
+
+
+    .carousel-favoritos-titulo {
+        position: relative;
+        bottom: 20px;
+    }
+
+    .carousel-favoritos-titulo h2 {
+        font-size: 2.5rem;
+        color: black;
+    }
+
+    .contenedor-imagen {
+        height: 50vh;
+        padding-top: 20px;
+    }
+
+    .img-carousel {
+        width: 140px;
+        height: 180px;
+    }
+
+    .img-carousel-galletas {
+        width: 160px;
+        height: 180px;
+    }
+
+    /* .background__main-principal {
+        padding-top: 8em;
+    }
+
+    .hero__container {
+        text-align: center;
+        color: white;
+        font-size: 1.5em;
+        height: fit-content;
+    }
+
+    .hero__texto-container {
+        width: 100vw;
+        height: fit-content;
+        padding: 0.5em;
+    } */
+
+
+
+
+
+    .hero__links {
+        height: min-content;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 0em 4em;
+    }
+
+    .hero__links a {
+        display: flex;
+        padding-top: 2.5em;
+        padding-left: 0;
+    }
+
+    .hero__links a span {
+        background-color: #ffff;
+        width: 40px;
+        height: 3px;
+    }
+
+    .hero__links a:first-child {
+        display: block;
+    }
+
+
+
+
+
+
+
+
+    /* .section__favoritos {
+        height: 70vh;
+    }
+
+    .section__favoritos h2 {
+        font-size: 1.5em;
+        padding-top: 1.5em;
+    }
+
+    .section__favoritos-imagenes {
+        display: flex;
+        margin: auto;
+        padding-bottom: 2.5em;
+
+
+    }
+
+    .section__favoritos-imagenes img {
+        width: 80px;
+        height: 100px;
+    }
+
+    .section__favoritos-imagenes div:first-child img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .items__favoritos {
+        width: 39vw;
+        margin: auto
+    } */
+
+
+
+
+
+
+    .extra__container {
+        padding: 2em 0;
+    }
+
+    .extra__imagenes {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .extra__izquierda,
+    .extra__derecha {
+        width: 100vw;
+        height: 40vh;
+        padding: 1em 1em 6em;
+    }
+
+    .extra__derecha {
+        position: relative;
+        top: 1em;
+    }
+
+    .extra__izquierda h2,
+    .extra__derecha h2 {
+        font-size: 2em;
+        width: 80vw;
+        color: white;
+    }
+
+    .varios__container {
+        background-color: black;
+        display: flex;
+        color: white;
+        padding: 2em;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .varios__desktop-item {
+        width: 12em;
+        height: 12em;
+    }
+
+    .varios__container p {
+        font-size: 1.5em;
+        color: white;
+        text-align: center;
+    }
+
+    .footer-redes {
+        display: flex;
+        justify-content: space-around;
+        padding: 1em;
+        font-size: 30px;
+    }
+
+    .footer-container h2 {
+        font-size: 30px;
+        padding-top: 20px;
+    }
+
+    .footer-contacto {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .footer-contacto a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 1.5em;
+    }
+
+
+    /* SALUDABLES */
+
+    .main__container-saludables {
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+            url("../imagenes/saludables/frutosSecos.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .hero__texto-saludables {
+        text-align: center;
+        font-size: 32px;
+        height: 100vh;
+        line-height: normal;
+
+    }
+
+    .hero__texto-saludables p {
+        padding-bottom: 5em;
+
+    }
+
+    .index-link-saludables {
+        text-decoration: none;
+        color: white;
+        margin: auto;
+
+    }
+
+
+    .carousel-contenedor2 {
+        background-color: #d9d9d9;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+
+
+    .producto-saludables-nombre {
+        color: white;
+        font-size: 2rem;
+        padding-top: 10px;
+    }
+
+
+
+    .carousel-saludables-titulo {
+        position: relative;
+        bottom: 20px;
+    }
+
+    .carousel-saludables-titulo h2 {
+        font-size: 2.5rem;
+        color: black;
+    }
+
+
+
+    .img-carousel {
+        width: 140px;
+        height: 180px;
+    }
+
+    .contenedor-saludables {
+        background-color: #d9d9d9
+    }
+
+    .producto-saludables-nombre {
+        color: red;
+        font-size: 1.5rem;
+        padding-top: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .combos__saludables {
+        font-size: .8em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .combos__saludables h2 {
+        padding-bottom: 1em;
+    }
+
+    .combos__saludables button {
+        font-size: 15px;
+        padding: 10px;
+        border-color: blue;
+    }
+
+
+    /* COMBOS */
+
+    .combos__container {
+        padding-top: 0em;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .combos__titulo {
+        font-size: 1rem;
+    }
+
+    .combos__hero {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 0em;
+    }
+
+    .combos__producto {
+        width: 100vw;
+        text-align: center;
+        padding-bottom: 2em;
+    }
+
+    .combos__producto p {
+        opacity: 0.6;
+        max-width: 100%;
+        text-align: justify;
+    }
+
+    .combos__producto h3 {
+        color: red;
+        text-align: center;
+        font-size: 1.5em;
+        padding-top: .1em;
+        padding-left: 0;
+        padding-bottom: 1em;
+    }
+
+    .combos__producto a img {
+
+        text-align: center;
+        border-color: white;
+    }
+
+    .combos__producto button {
+        font-size: 1.25em;
+        background-color: orange;
+        padding: .5em;
+
+    }
+
+    /* ALMENDRAS */
+
+    .almendras__container {
+        padding: 0;
+    }
+
+    .almendras__hero {
+        display: flex;
+        padding: 2rem 0 0;
+        flex-direction: column;
+
+    }
+
+    .almendras__img {
+        position: relative;
+        top: 6rem;
+        /* esta relacionado al position de de caracteristicas */
+    }
+
+    .almendras__img img {
+        padding: 0;
+        width: 100vw;
+    }
+
+    .almendras__info {
+        position: relative;
+        top: -18em;
+        padding: 1.5em 1em;
+    }
+
+    .almendras__info h1 {
+        width: 100vw;
+        font-size: 1.5rem;
+        padding-bottom: .2em;
+    }
+
+    .almendras__info h2 {
+        font-size: 10px;
+        height: fit-content;
+        padding: 0;
+    }
+
+    .almendras__info i {
+        font-size: 10px;
+    }
+
+    .almendras__caracteristicas {
+        position: relative;
+        top: 28em;
+        font-size: 13px;
+    }
+
+    .almendras__precio {
+        position: relative;
+        top: 4em;
+    }
+
+    .almendras__precio p {
+        font-size: 20px;
+    }
+
+    .almendras__boton-mobile {
+        position: sticky;
+        top: 10rem;
+        bottom: 1.5rem;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+
+    }
+
+    .almendras__boton-mobile button {
+        font-size: 15px;
+        padding: .5em;
+        background-color: orange;
+        border-radius: 15px;
+        cursor: pointer;
+        width: 90%;
+    }
+
+    .almendras__info hr {
+        display: none;
+    }
+
+
+    /* CONTACTO */
+
+    .contacto__container {
+        background-image: url(../imagenes/contacto/fondo-mobile.jpg);
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+
+    }
+
+    .contacto__columnaIzquierda {
+        text-align: left;
+        color: white;
+        font-size: 15px;
+    }
+
+    .contacto__central {
+        padding: 2em 0;
+    }
+
+    .contacto__columnaCentral {
+        width: 100vh;
+        padding: 1em;
+    }
+
+    .contacto__columnaCentral h1 {
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+    .contacto__columnaCentral label {
+        padding-top: 18px;
+    }
+
+    .contacto__columnaCentral input {
+        font-size: 15px;
+        margin: 10px;
+        padding: .5em;
+    }
+
+    .contacto__columnaDerecha {
+        font-size: 15px;
+        line-height: 1.5em;
+        text-align: left;
+    }
+
+    .contacto__columnaDerecha h3 {
+        padding: 1em 0;
+    }
+
+}
