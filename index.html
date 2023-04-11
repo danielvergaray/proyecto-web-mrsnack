@@ -18,23 +18,49 @@
 
 <body>
     <header>
+
         <!----------------- cabecera mobile ------------------------>
+        <!-- <nav class="nav">
+            <div>
+                <a class="mobile__cabecera-logo" href="./index.html"><img src="./imagenes/index/logo.png" alt="logo"></a>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Saludables</a></li>
+                <li><a href="">Combos</a> </li>
+                <li><a href="">Almendras</a> </li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav> -->
+
+
+
+
         <div class="mobile__cabecera-container">
             <a class="mobile__cabecera-logo" href="./index.html"><img src="./imagenes/index/logo.png" alt="logo"></a>
             <input type="checkbox" id="check">
             <label for="check" class="mobile__cabecera-hamburguesa">
                 <i class="fa-solid fa-bars"></i>
             </label>
-            <section class="menu-desplegable-mobile">
-                <li class="nav__responsive-li"><a href="">Inicio</a></li>
-                <li class="nav__responsive-li"><a href="">Saludables</a></li>
-                <li class="nav__responsive-li"><a href="">Combos</a> </li>
-                <li class="nav__responsive-li"><a href="">Almendras</a> </li>
-                <li class="nav__responsive-li"><a href="">Contacto</a></li>
-            </section>
-            <!-- <a class="mobile__cabecera-hamburguesa" href="#"></a> -->
-            <a class="mobile__carrito" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <!-- <a class="mobile__carrito" href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
+            <ul class="menu-desplegable-mobile">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Saludables</a></li>
+                <li><a href="">Combos</a> </li>
+                <li><a href="#">Carrito</a> </li>
+                <li><a href="">Contacto</a></li>
+            </ul>
         </div>
+
+
+
+        <!-- <a class="mobile__cabecera-hamburguesa" href="#"></a> -->
+
 
         <!----------------- cabecera mobile ------------------------------>
 
@@ -62,7 +88,7 @@
         <!--------------- cabecera desktop --------------------->
     </header>
 
-    
+
 
 
     <main class="background__main-container">
@@ -101,7 +127,7 @@
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            <button class="carousel-control-next flecha" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>

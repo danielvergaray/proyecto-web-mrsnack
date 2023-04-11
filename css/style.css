@@ -832,44 +832,74 @@
         display: block;
     }
 
-    .menu-desplegable-mobile {
-
-        z-index: 500;
-        display: block;
+    /* .nav {
+        height: 100px;
+        width: 320px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000;
         position: fixed;
-        top: 100px;
-        background-color: rgba(0, 0, 0, 0.9);
-        list-style: none;
+        z-index: 600;
+        
+
+    }
+
+    .nav-menu {
+        
+        width: 320px;
         height: 0;
+        top: 100px;
+        background-color: rgba(0, 0, 0);
         text-align: center;
-        line-height: 50px;
-        /* padding-top: 30%; */
-        width: 100vw;
-        transition: all 2s;
-
-    }
-    .menu-desplegable-mobile li{
-        display: none;
-    }
-    .menu-desplegable-mobile li a{
-        text-decoration: none;
-        color: white;
-        font-size: 25px;
-        display: none;
+        transition: all .5s;
         z-index: 500;
+        padding: 0;
+        margin: 0;
+        
     }
 
-    #check{
+    .nav-menu li {
+        display: block;
+        line-height: 30px;
+        margin: 50px 0;
+        transition: all .5s;
         display: none;
     }
-    #check:checked ~ .menu-desplegable-mobile{
-        height: 100vh;
-        
+
+    .nav-menu li a {
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
     }
-    #check:checked ~ .menu-desplegable-mobile li{
+
+    #check {
+        display: none;
+        position: fixed;
+        z-index: 600;
+    }
+
+    #check:checked~.nav-menu {
+        
+        position: fixed;
+        width: 320px;
+    }
+    
+
+    #check:checked~.nav-menu li {
         display: block;
-        
+
     }
+
+    .bar-btn {
+        padding-right: 20px;
+        color: white;
+        cursor: pointer;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+    } */
+
 
     .mobile__cabecera-container {
         display: flex;
@@ -879,12 +909,88 @@
         align-items: center;
         background-color: #000;
         height: 80px;
-        
+
     }
+
+
+    .menu-desplegable-mobile {
+        width: 320px;
+        height: 100vh;
+        top: 80px;
+        background-color: rgba(0, 0, 0);
+        text-align: center;
+        transition: all .5s;
+        z-index: 500;
+        padding: 0;
+        position: relative;
+        left: 0px;
+        padding-top: 30%;
+        
+        
+        
+
+    }
+
+    .menu-desplegable-mobile li a {
+        color: white;
+        font-size: 25px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .menu-desplegable-mobile li {
+        display: none;
+        line-height: 30px;
+        margin: 50px 0;
+        transition: all .5s;
+        
+
+
+
+
+    }
+
+    #check {
+        display: none;
+    }
+
+    #check:checked ~.menu-desplegable-mobile {
+        display: block;
+        position: fixed;
+        margin: 0;
+        height: 110vh;
+        top: 0;
+    
+    }
+   
+    #check:checked ~.mobile__cabecera-hamburguesa {
+        
+        position: fixed;
+        z-index: 600;
+        padding-left: 145px;
+    }
+
+
+    
+    #check:checked~.menu-desplegable-mobile li {
+        display: block;
+        
+
+    }
+   
+    #check:checked ~.mobile__cabecera-logo{
+        position: fixed;
+        z-index: 600; 
+    }
+    
 
     .mobile__cabecera-logo {
         width: fit-content;
         padding-left: 1em;
+        /* position: fixed;
+        z-index: 600; */
+        
+       
     }
 
     .mobile__cabecera-logo img {
@@ -893,17 +999,20 @@
 
     }
 
-    .mobile__carrito {
+    /* .mobile__carrito {
         width: fit-content;
         color: white;
         padding-right: 2.5em;
 
-    }
+    } */
 
     .mobile__cabecera-hamburguesa {
-        padding-right: 20px;
+        padding-right: 30px;
         color: white;
-        cursor: pointer;
+        font-size: 25px;
+        
+        /* position: fixed;
+        z-index: 600; */
     }
 
     .carousel-indicators [data-bs-target] {
@@ -926,7 +1035,7 @@
 
     }
 
-    .texto-principal-saludables h5 {}
+
 
     .producto-favoritos-nombre {
         color: white;
@@ -959,6 +1068,11 @@
     .img-carousel-galletas {
         width: 160px;
         height: 180px;
+    }
+
+    .flecha { /* Para que la flecha derecha tenga una alura pequeña y pueda usar el menu hamburguesa*/
+        height: fit-content;
+        margin: auto;
     }
 
     /* .background__main-principal {
