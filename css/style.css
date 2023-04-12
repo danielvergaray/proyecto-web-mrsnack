@@ -909,13 +909,13 @@
     .menu-desplegable-mobile {
         /* width: 576px; */
         width: 100vw;
-        height: 100vh;
+        height: 150vh;
         /* top: 80px; */
         background-color: rgba(0, 0, 0);
         text-align: center;
         transition: all .5s;
         z-index: 500;
-        padding: 0;
+        padding-top: 80px;
         /* position: relative; */
         left: 0px; 
         /* padding-top: 15%; */
@@ -939,6 +939,7 @@
         line-height: 30px;
         margin: 50px 0;
         transition: all .5s;
+        height: fit-content;
         
 
 
@@ -1027,6 +1028,8 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .carousel-captio {
@@ -1076,8 +1079,8 @@
     }
 
     .contenedor-imagen {
-        height: 50vh;
-        padding-top: 20px;
+        margin: 0;
+        /* padding-top: 20px; */
     }
 
     .img-carousel {
@@ -1299,6 +1302,8 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
 
     }
 
@@ -1450,35 +1455,35 @@
 
     .almendras__info {
         position: relative;
-        top: -18em;
-        padding: 1.5em 1em;
+        top: -500px;
+        padding-top: 50px;
     }
 
     .almendras__info h1 {
-        width: 100vw;
-        font-size: 1.5rem;
+        
+        font-size: 24px;
         padding-bottom: .2em;
     }
 
     .almendras__info h2 {
-        font-size: 10px;
+        font-size: 15px;
         height: fit-content;
         padding: 0;
     }
 
     .almendras__info i {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .almendras__caracteristicas {
         position: relative;
-        top: 28em;
+        top: 580px;
         font-size: 13px;
     }
 
     .almendras__precio {
         position: relative;
-        top: 4em;
+        top: 350px;
     }
 
     .almendras__precio p {
@@ -1487,8 +1492,10 @@
 
     .almendras__boton-mobile {
         position: sticky;
-        top: 10rem;
-        bottom: 1.5rem;
+        /* top: 10rem;
+        bottom: 1.5rem; */
+        top: -100px;
+        bottom: 33px;
         display: flex;
         justify-content: center;
         padding-top: 20px;
@@ -1496,12 +1503,12 @@
     }
 
     .almendras__boton-mobile button {
-        font-size: 15px;
+        font-size: 25px;
         padding: .5em;
         background-color: orange;
         border-radius: 15px;
         cursor: pointer;
-        width: 90%;
+        width: 70%;
     }
 
     .almendras__info hr {
