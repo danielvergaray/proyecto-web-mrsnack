@@ -907,17 +907,20 @@
 
 
     .menu-desplegable-mobile {
-        width: 576px;
+        /* width: 576px; */
+        width: 100vw;
         height: 100vh;
-        top: 80px;
+        /* top: 80px; */
         background-color: rgba(0, 0, 0);
         text-align: center;
         transition: all .5s;
         z-index: 500;
         padding: 0;
-        position: relative;
-        left: 0px;
-        padding-top: 30%;
+        /* position: relative; */
+        left: 0px; 
+        /* padding-top: 15%; */
+        /* display: flex;
+        justify-content: center; */
         
         
         
@@ -1009,7 +1012,9 @@
     }
     .carousel1, .carousel2{
         height: 80vh;
+        
     }
+    
     .carousel-indicators [data-bs-target] {
         height: 3px;
 
@@ -1017,7 +1022,7 @@
 
     .carousel-contenedor {
         background-color: red;
-        
+        height: fit-content;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1029,8 +1034,13 @@
         /* No modificar*/
 
     }
-    .texto-principal, .texto-principal-saludables{
+    .texto-principal{
+        padding-bottom: 150px;
+        margin: 0;   
+    }
+    .texto-principal-saludables{
         padding-bottom: 100px;
+        margin: 0;   
     }
     
     .texto-principal h5, .texto-principal-saludables h5, .hero__texto-saludables p{
@@ -1284,7 +1294,7 @@
 
     .carousel-contenedor2 {
         background-color: #d9d9d9;
-        
+        height: fit-content;
         display: flex;
         align-items: center;
         justify-content: center;
