@@ -962,10 +962,10 @@
         top: 0;
     
     }
-    #check:checked ~ main, section, footer{
+    /* #check:checked ~ main, section, footer{
         display: none;
     
-    }
+    } */
    
     #check:checked ~.mobile__cabecera-x {
         display: block;
