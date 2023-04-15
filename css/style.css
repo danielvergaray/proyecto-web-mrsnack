@@ -11,6 +11,10 @@
     --padding-top: 100px;
     /*Para que la info no quede debajo de la nav bar */
     --altura-menu-mobile: height: 80px;
+    --color-black: black;
+    --color-orangered: orangered;
+    /*BOTONES*/
+    --radio-border: 15px;
 }
 
 /* VERSION DESKTOP --------  */
@@ -192,7 +196,7 @@
     /*Version desktop*/
     display: flex;
     flex-direction: column;
-    background-color: red;
+    background-color:var(--color-black);
     color: white;
     text-align: center;
     height: 80vh;
@@ -201,7 +205,7 @@
 .section__favoritos h2 {
     font-size: 40px;
     padding: 1em 0 1em;
-    color: black;
+    color: white;
 }
 
 .section__favoritos-imagenes {
@@ -283,6 +287,7 @@
     border: 1px solid white;
     color: white;
     cursor: pointer;
+    border-radius: var(--radio-border);
 }
 
 .extra__derecha {
@@ -301,7 +306,7 @@
 
 .extra__izquierda button:hover,
 .extra__derecha button:hover {
-    background-color: #917236;
+    background-color: orangered;
     border: #917236;
 }
 
@@ -491,16 +496,17 @@
 
 .combos__saludables button {
     font-size: 20px;
-    padding: 10px;
-    background-color: blue;
+    padding: 15px;
+    background-color: var(--color-orangered);
     color: white;
     cursor: pointer;
-    border: 1px solid white;
+    border: 0px;
+    border-radius: var(--radio-border);
 }
 
 .combos__saludables button:hover {
     opacity: .8;
-    border: 1px solid blue;
+    
 }
 
 /* CONTACTO */
@@ -662,7 +668,7 @@
 .almendras__precio {
     display: flex;
     justify-content: space-between;
-    color: red;
+    color: var(--color-orangered);
     font-size: 30px;
     padding-top: 25px;
 }
@@ -675,19 +681,20 @@
     display: flex;
     justify-content: center;
     padding-top: 20px;
+    
 }
 
 .almendras__boton button {
     font-size: 20px;
     width: 100%;
     padding: 16px;
-    background-color: orange;
-    border-radius: 15px;
+    background-color: var(--color-orangered);
+    border-radius: var(--radio-border);
     cursor: pointer;
 }
 
 .almendras__boton button:hover {
-    background-color: orangered;
+    opacity: 0.8;
 }
 
 /* COMBOS */
@@ -752,13 +759,15 @@
 
 .combos__producto button {
     font-size: 21px;
-    background-color: orange;
-    padding: 8px;
+    background-color: var(--color-orangered);
+    padding: 15px;
     cursor: pointer;
+    border-radius: var(--radio-border);
+    border: 0px
 }
 
 .combos__producto button:hover {
-    background-color: orangered;
+    opacity: .7;
 }
 
 
@@ -880,7 +889,7 @@
     }
 
     .carousel-contenedor {
-        background-color: red;
+        background-color: var(--color-black);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -888,6 +897,7 @@
         padding-top: 40px;
         padding-bottom: 40px;
     }
+    
 
     .carousel-captio {
         font-size: 2rem;
@@ -933,7 +943,7 @@
 
     .carousel-favoritos-titulo h2 {
         font-size: 2.5rem;
-        color: black;
+        color: white;
     }
 
     .img-carousel {
@@ -1112,7 +1122,7 @@
     .combos__saludables button {
         font-size: 20px;
         padding: 15px;
-        border-color: blue;
+        border-color: var(--color-orangered);
     }
 
 
@@ -1158,7 +1168,7 @@
     }
 
     .combos__producto h3 {
-        color: red;
+        color: var(--color-orangered);
         text-align: center;
         font-size: 30px;
         padding-top: 10px;
@@ -1173,8 +1183,8 @@
 
     .combos__producto button {
         font-size: 30px;
-        background-color: orange;
-        padding: 8px;
+        background-color: var(--color-orangered);
+        padding: 15px;
 
     }
 
@@ -1221,7 +1231,7 @@
 
     .mobile-almendras__precio p {
         font-size: 40px;
-        color: red;
+        color: var(--color-orangered);
     }
 
     .mobile-almendras__caracteristicas {
@@ -1256,8 +1266,8 @@
     .almendras__boton-mobile button {
         font-size: 25px;
         padding: 8px;
-        background-color: orange;
-        border-radius: 15px;
+        background-color: var(--color-orangered);
+        border-radius: var(--radio-border);
         cursor: pointer;
         width: 70%;
         border: none;
