@@ -4,7 +4,12 @@
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
+
+/* body {
+    border: 1px solid blue;
+} */
 
 :root {
     --paddingLateral: 8em;
@@ -50,7 +55,7 @@
 }
 
 .desktop__cabecera nav ul {
-    width: 90vh;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     padding: 0;
@@ -59,6 +64,7 @@
 
 .desktop__cabecera nav ul li {
     list-style: none;
+    padding-left: 40px;
 }
 
 .desktop__cabecera a {
@@ -102,7 +108,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100vh; /*No modificar*/
 }
 
 .carousel2 {
@@ -112,7 +118,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100vh; /*No modificar*/
 
 }
 
@@ -177,7 +183,8 @@
     line-height: 97px;
     display: flex;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 100%;
     color: white;
     text-align: center;
 }
@@ -188,6 +195,11 @@
     height: 70vh;
 }
 
+.carousel-favoritos-titulo h2 {
+    color: white;
+    font-size: 40px;
+}
+
 .carousel-indicators button:hover {
     opacity: .3;
 }
@@ -196,7 +208,7 @@
     /*Version desktop*/
     display: flex;
     flex-direction: column;
-    background-color:var(--color-black);
+    background-color: var(--color-black);
     color: white;
     text-align: center;
     height: 80vh;
@@ -264,7 +276,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
-    width: 47vw;
+    width: 100%;
     margin: auto;
     padding: 128px 48px 72px;
     color: white;
@@ -298,7 +310,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
-    width: 47vw;
+    width: 100%;
     margin: auto;
     padding: 128px 48px 96px 48px;
     color: white;
@@ -506,13 +518,13 @@
 
 .combos__saludables button:hover {
     opacity: .8;
-    
+
 }
 
 /* CONTACTO */
 
 .contacto__container {
-    background-image: url(../imagenes/contacto/fondo.jpg);
+    background-image: url("../imagenes/contacto/fondo.jpg");
     padding: 128px 0;
     display: grid;
     grid-template-columns: 25% 50% 25%;
@@ -681,7 +693,7 @@
     display: flex;
     justify-content: center;
     padding-top: 20px;
-    
+
 }
 
 .almendras__boton button {
@@ -797,14 +809,15 @@
         display: flex;
         justify-content: space-between;
         padding: 8px;
-        width: 100vw;
+        /* width: 100vw; */
         align-items: center;
         background-color: #000;
     }
 
     .menu-desplegable-mobile {
-        width: 100vw;
-        height: 150vh;
+        /* width: 100%; */
+        width: 100%;
+        height: 100%;
         background-color: rgba(0, 0, 0);
         text-align: center;
         transition: all .5s;
@@ -897,7 +910,7 @@
         padding-top: 40px;
         padding-bottom: 40px;
     }
-    
+
 
     .carousel-captio {
         font-size: 2rem;
@@ -936,14 +949,14 @@
         padding-top: 10px;
     }
 
-    .carousel-favoritos-titulo {
+    .carousel-saludables-titulo {
         position: relative;
         bottom: 20px;
     }
 
-    .carousel-favoritos-titulo h2 {
+    .carousel-saludables-titulo h2 {
         font-size: 2.5rem;
-        color: white;
+        color: black;
     }
 
     .img-carousel {
@@ -969,25 +982,22 @@
     .extra__imagenes {
         display: flex;
         flex-direction: column;
-        width: 100vw;
+        /* width: 100vw; */
     }
 
     .extra__izquierda,
     .extra__derecha {
-        width: 100vw;
+        /* width: 100vw; */
         height: 40vh;
         padding: 16px 16px 96px;
     }
 
-    .extra__derecha {
-        position: relative;
-        top: 16px;
-    }
+    
 
     .extra__izquierda h2,
     .extra__derecha h2 {
         font-size: 32px;
-        width: 80vw;
+        /* width: 80vw; */
         color: white;
     }
 
@@ -1148,7 +1158,8 @@
     }
 
     .combos__producto {
-        width: 100vw;
+        /* width: 100vw; */
+        width: 100%;
         text-align: center;
         padding-bottom: 32px;
     }
@@ -1202,7 +1213,8 @@
 
     .almendras__img img {
         padding: 20px 0;
-        width: 100vw;
+        /* width: 100vw; */
+        width: 100%;
     }
 
     .mobile-almendras__info {
@@ -1280,7 +1292,7 @@
     /* CONTACTO */
 
     .contacto__container {
-        background-image: url(../imagenes/contacto/fondo-mobile.jpg);
+        background-image: url("../imagenes/contacto/fondo-mobile.jpg");
         display: flex;
         flex-direction: column;
         padding: 30px;
@@ -1298,7 +1310,7 @@
     }
 
     .contacto__columnaCentral {
-        width: 100vh;
+        width: 100%;
         padding: 50px;
     }
 
