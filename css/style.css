@@ -87,16 +87,27 @@ body{
 
 .desktop__cabecera form {
     display: flex;
+    
+    
+    
 }
 
 .buscar-contenedor {
     padding-left: 100px;
+    font-family: 'Barlow Condensed', sans-serif;
+   
 }
+
 
 .buscar {
     font-size: 21px;
     border-radius: 15px;
     text-align: center;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    padding: 3px 0;
+    height: 40.70px;
+    
 }
 
 .carrito {
