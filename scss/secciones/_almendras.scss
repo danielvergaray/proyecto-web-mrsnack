@@ -10,9 +10,9 @@
         word-spacing: 15px;
         a {
             text-decoration: none;
-            color: black;
+            color: $negro;
             &:hover {
-                color: blue;
+                color: $azul;
             }
         }
     }
@@ -59,7 +59,7 @@
         .almendras__precio {
             display: flex;
             justify-content: space-between;
-            color: var(--color-orangered);
+            color: $anaranjado;
             font-size: 30px;
             padding-top: 25px;
             p {
@@ -74,7 +74,7 @@
                 font-size: 20px;
                 width: 100%;
                 padding: 16px;
-                background-color: var(--color-orangered);
+                background-color: $anaranjado;
                 border-radius: var(--radio-border);
                 border: 0px;
                 cursor: pointer;

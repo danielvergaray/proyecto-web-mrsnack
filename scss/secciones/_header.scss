@@ -1,6 +1,6 @@
 .desktop__cabecera {
     display: flex;
-    background-color: black;
+    background-color: $negro;
     height: 48px;
     padding: 48px;
     align-items: center;
@@ -19,17 +19,20 @@
             li {
                 list-style: none;
                 padding-left: 40px;
+                a{
+                    &:hover{
+                        background-color: $azul;
+                    }
+                }
             }
         }
     }
     a {
         scale: 0.45;
         text-decoration: none;
-        color: white;
+        color: $blanco;
         font-size: 25px;
-        &:hover{
-            background-color: blue;
-        }
+        
     }
     form {
         display: flex;

@@ -15,8 +15,6 @@ body {
   --padding-top: 100px;
   /*Para que la info no quede debajo de la nav bar */
   --altura-menu-mobile: height: 80px;
-  --color-black: black;
-  --color-orangered: orangered;
   /*BOTONES*/
   --radio-border: 15px; }
 
@@ -52,14 +50,13 @@ body {
     .desktop__cabecera nav ul li {
       list-style: none;
       padding-left: 40px; }
+      .desktop__cabecera nav ul li a:hover {
+        background-color: blue; }
   .desktop__cabecera a {
     scale: 0.45;
     text-decoration: none;
     color: white;
-<<<<<<< HEAD
     font-size: 25px; }
-    .desktop__cabecera a:hover {
-      background-color: blue; }
   .desktop__cabecera form {
     display: flex; }
   .desktop__cabecera .buscar-contenedor {
@@ -71,41 +68,6 @@ body {
       font-family: 'Barlow Condensed', sans-serif;
       height: 40.70px; }
   .desktop__cabecera div .carrito {
-=======
-    font-size: 25px;
-}
-
-.desktop__cabecera nav a:hover {
-    background-color: blue;
-}
-
-.desktop__cabecera form {
-    display: flex;
-    
-    
-    
-}
-
-.buscar-contenedor {
-    padding-left: 100px;
-    font-family: 'Barlow Condensed', sans-serif;
-   
-}
-
-
-.buscar {
-    font-size: 21px;
-    border-radius: 15px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Barlow Condensed', sans-serif;
-    padding: 3px 0;
-    height: 40.70px;
-    
-}
-
-.carrito {
->>>>>>> 38a5be821d1c13ee999af9d5994fa62a0be77fcb
     padding: 0 125px;
     font-size: 25px; }
 
@@ -170,7 +132,7 @@ body {
   /*Version desktop*/
   display: flex;
   flex-direction: column;
-  background-color: var(--color-black);
+  background-color: black;
   color: white;
   text-align: center;
   height: 35rem;
@@ -238,7 +200,7 @@ body {
         width: fit-content; }
         .extra__container .extra__imagenes .extra__izquierda button:hover {
           background-color: orangered;
-          border: #917236; }
+          border: orangered; }
     .extra__container .extra__imagenes .extra__derecha {
       grid-column: 2;
       background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../imagenes/index/tienda.jpg");
@@ -267,7 +229,7 @@ body {
         width: fit-content; }
         .extra__container .extra__imagenes .extra__derecha button:hover {
           background-color: orangered;
-          border: #917236; }
+          border: orangered; }
 
 .varios__container {
   background-color: black;
@@ -403,7 +365,7 @@ body {
   .combos__saludables button {
     font-size: 20px;
     padding: 15px;
-    background-color: var(--color-orangered);
+    background-color: orangered;
     color: white;
     cursor: pointer;
     border: 0px;
@@ -414,7 +376,7 @@ body {
 .combos__container {
   padding-top: var(--padding-top);
   /*Para que la info no quede debajo de la navBar */
-  background-color: #fff;
+  background-color: white;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -453,7 +415,7 @@ body {
             scale: 1.1; }
       .combos__container .combos__hero .combos__producto button {
         font-size: 21px;
-        background-color: var(--color-orangered);
+        background-color: orangered;
         padding: 15px;
         cursor: pointer;
         border-radius: var(--radio-border);
@@ -486,7 +448,7 @@ body {
       display: flex;
       width: 50%;
       flex-direction: column;
-      box-shadow: 7px 13px 37px #000;
+      box-shadow: 7px 13px 37px black;
       background-color: #24303c; }
       .contacto__container .contacto__central .contacto__columnaCentral h1 {
         font-size: 25px;
@@ -567,7 +529,7 @@ body {
     .almendras__container .almendras__info .almendras__precio {
       display: flex;
       justify-content: space-between;
-      color: var(--color-orangered);
+      color: orangered;
       font-size: 30px;
       padding-top: 25px; }
       .almendras__container .almendras__info .almendras__precio p {
@@ -580,7 +542,7 @@ body {
         font-size: 20px;
         width: 100%;
         padding: 16px;
-        background-color: var(--color-orangered);
+        background-color: orangered;
         border-radius: var(--radio-border);
         border: 0px;
         cursor: pointer;
