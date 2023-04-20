@@ -1,0 +1,33 @@
+.footer-container {
+    background-color: #d9d9d9;
+    text-align: center;
+    text-transform: uppercase;
+    h2 {
+        font-size: 35px;
+        padding-top: 20px;
+    }
+    .footer-redes {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 240px;
+        font-size: 32px;
+        i {
+            color: black;
+        }
+    }
+    .footer-contacto {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 160px;
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+        }
+    }
+    }
+
+
+
+

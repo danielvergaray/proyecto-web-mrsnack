@@ -1,0 +1,103 @@
+.almendras__container {
+    padding-top: var(--padding-top);
+    /*Para que la info no quede debajo de la navBar */
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    
+    .almendras__barraSuperior {
+        padding: 16px 0 0 16px;
+        word-spacing: 15px;
+        a {
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: blue;
+            }
+        }
+    }
+    .almendras__hero {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 32px;
+        .almendras__img {
+            grid-column: 1;
+            img {
+                width: 90%;
+                padding: 32px;
+            }
+        }
+    }
+    .almendras__info {
+        grid-column: 2;
+        letter-spacing: 2px;
+        padding: 32px;
+        h1 {
+            font-size: 30px;
+            padding-bottom: 10px;
+            width: 80%;
+        }
+        h2 {
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+        i {
+            cursor: pointer;
+        }
+        h3 {
+            font-size: 15px;
+            padding: 10px 0px;
+            text-decoration: underline;
+        }
+        ul {
+            list-style: circle;
+            line-height: 20px;
+            padding-left: 20px;
+            opacity: 0.6;
+            padding-bottom: 25px;
+        }
+        .almendras__precio {
+            display: flex;
+            justify-content: space-between;
+            color: var(--color-orangered);
+            font-size: 30px;
+            padding-top: 25px;
+            p {
+                padding-right: 150px;
+            }
+        }
+        .almendras__boton {
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+            button {
+                font-size: 20px;
+                width: 100%;
+                padding: 16px;
+                background-color: var(--color-orangered);
+                border-radius: var(--radio-border);
+                border: 0px;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-family: 'Barlow Condensed', sans-serif;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

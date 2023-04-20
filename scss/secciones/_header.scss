@@ -1,0 +1,54 @@
+.desktop__cabecera {
+    display: flex;
+    background-color: black;
+    height: 48px;
+    padding: 48px;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    text-transform: uppercase;
+    nav {
+        ul {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0;
+            li {
+                list-style: none;
+                padding-left: 40px;
+            }
+        }
+    }
+    a {
+        scale: 0.45;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        &:hover{
+            background-color: blue;
+        }
+    }
+    form {
+        display: flex;
+    }
+    .buscar-contenedor {
+        padding-left: 100px;
+        .buscar {
+            font-size: 21px;
+            border-radius: 15px;
+            text-align: center;
+            font-family: 'Barlow Condensed', sans-serif;
+            height: 40.70px;
+        }
+    }
+    div{
+    
+        .carrito {
+            padding: 0 125px;
+            font-size: 25px;
+        }
+    }
+}

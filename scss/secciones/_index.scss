@@ -1,0 +1,261 @@
+#carouselExampleCaptions{
+    .carousel-indicators [data-bs-target] {
+        width: 50px !important;
+        height: 6px;
+        margin-right: 10px;
+        margin-left: 10px;
+        opacity: .9;
+        button{
+            &:hover {
+                opacity: .3;
+            }
+        }
+    }
+    .carousel-inner {
+        .carousel1 {
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+                url("../imagenes/index/imagenHero1.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh; /*No modificar*/
+            .texto-principal {
+                padding-bottom: 160px;
+                padding-top: 0;
+                h5 {
+                    font-size: 80px;
+                    margin: 0;
+                }
+            }
+        }
+        .carousel2 {
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+                url("../imagenes/saludables/frutosSecos.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh; /*No modificar*/
+            
+        
+            .texto-principal-saludables {
+                padding-bottom: 150px;
+                padding-top: 0;
+            
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+                h5{
+                    font-size: 80px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        scale: 1.5;
+        font-weight: 1000;
+    }
+    .flecha {
+        /* Para que la flecha derecha tenga una altura pequeña y pueda usar el menu hamburguesa*/
+        height: fit-content;
+        margin: auto;
+        width: fit-content;
+    }
+    
+    .index-flechaIzquierda {
+        margin-left: 50px;
+    }
+    
+    .index-flechaDerecha {
+        margin-right: 50px;
+    }
+}
+// .carouselExampleCaptions2{
+//     .carousel-indicators [data-bs-target] {
+//         width: 50px !important;
+//         height: 6px;
+//         margin-right: 10px;
+//         margin-left: 10px;
+//         opacity: .9;
+//     }
+
+//     .carousel-favoritos-titulo h2 {
+//         color: white;
+//         font-size: 40px;
+//     }
+// }
+
+.section__favoritos {
+    /*Version desktop*/
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-black);
+    color: white;
+    text-align: center;
+    height: 35rem;
+    text-transform: uppercase;
+    h2 {
+        font-size: 40px;
+        padding: 1em 0 1em;
+        color: white;
+    }
+    .section__favoritos-imagenes {
+        display: flex;
+        margin: auto 0;
+        padding-bottom: 90px;
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+            padding: 0;
+            &:first-child{
+                img {
+                    /*Para modificar tamaño primera imagen*/
+                    width: 200px;
+                }
+            } 
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            padding-top: 25px;
+            &:hover {
+                scale: 1.2;
+            }
+        }
+        img {
+            width: 150px;
+            height: 200px;
+        }
+    }
+}
+
+
+
+.extra__container {
+    padding: 32px 8px;
+    text-transform: uppercase;
+    p {
+        color: white;
+    }
+    .extra__imagenes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .extra__izquierda {
+            grid-column: 1;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+                url("../imagenes/index/catering.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 32rem;
+            width: 90%;
+            margin: auto;
+            padding: 128px 48px 72px;
+            color: white;
+            p {
+                padding: 32px 0;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            button{
+                padding: 16px;
+                font-size: 25px;
+                margin: auto;
+                letter-spacing: 1.6px;
+                background-color: transparent;
+                border: 1px solid white;
+                color: white;
+                cursor: pointer;
+                border-radius: var(--radio-border);
+                width: fit-content;
+                &:hover{
+                    background-color: orangered;
+                    border: #917236;
+                }
+            }
+        }
+        .extra__derecha {
+            grid-column: 2;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+                url("../imagenes/index/tienda.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 32rem;
+            width: 90%;
+            margin: auto;
+            padding: 128px 48px 96px 48px;
+            color: white;
+            p {
+                padding: 32px 0;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            button {
+                padding: 16px;
+                font-size: 25px;
+                margin: auto;
+                letter-spacing: 1.6px;
+                background-color: transparent;
+                border: 1px solid white;
+                color: white;
+                cursor: pointer;
+                border-radius: var(--radio-border);
+                width: fit-content;
+                &:hover {
+                    background-color: orangered;
+                    border: #917236;
+                }
+            }
+            }
+    }
+}
+
+
+.varios__container {
+    background-color: black;
+    display: flex;
+    padding: 96px;
+    justify-content: space-around;
+    text-transform: uppercase;
+    p {
+        font-size: 30px;
+        color: black;
+        text-align: center;
+    }
+    .varios__hover-imagenes{
+
+        .varios___imagenes {
+            text-align: center;
+            overflow: hidden;
+            /* Para que el zoom se haga dentro del recuadro de la imagen*/
+            .varios__desktop-item {
+                width: 17em;
+                height: 19em;
+                transition: 0.5s;
+                object-fit: cover;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        &:hover {
+            
+            .varios__hover-texto {
+                /* Texto se vuelve blanco cuando paso el mouse por la imagen*/
+                color: white;
+            }
+        }
+    }
+}
+
+
+
+
+
