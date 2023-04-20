@@ -56,6 +56,7 @@ body {
     scale: 0.45;
     text-decoration: none;
     color: white;
+<<<<<<< HEAD
     font-size: 25px; }
     .desktop__cabecera a:hover {
       background-color: blue; }
@@ -70,6 +71,41 @@ body {
       font-family: 'Barlow Condensed', sans-serif;
       height: 40.70px; }
   .desktop__cabecera div .carrito {
+=======
+    font-size: 25px;
+}
+
+.desktop__cabecera nav a:hover {
+    background-color: blue;
+}
+
+.desktop__cabecera form {
+    display: flex;
+    
+    
+    
+}
+
+.buscar-contenedor {
+    padding-left: 100px;
+    font-family: 'Barlow Condensed', sans-serif;
+   
+}
+
+
+.buscar {
+    font-size: 21px;
+    border-radius: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    padding: 3px 0;
+    height: 40.70px;
+    
+}
+
+.carrito {
+>>>>>>> 38a5be821d1c13ee999af9d5994fa62a0be77fcb
     padding: 0 125px;
     font-size: 25px; }
 
