@@ -1,0 +1,22 @@
+// EXTEND //
+
+.flex-spaceBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+// MOXIN //
+
+@mixin propiedades-cabecera ($color-fondo, $altura, $ancho) {
+    background-color: $color-fondo;
+    height: $altura;
+    width: $ancho;
+}
+
+@mixin propiedades-menuFooter ($color-texto, $subrayado-texto, $tamano-texto) {
+    color: $color-texto;
+    text-decoration: $subrayado-texto;
+    font-size: $tamano-texto;
+
+}
