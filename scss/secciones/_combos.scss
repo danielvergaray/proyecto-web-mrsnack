@@ -1,3 +1,9 @@
+// .mobile__cabecera-container,
+// .mobile__saludables-productos,
+// .menu-desplegable-mobile {
+//     display: none;
+// }
+
 .combos__container {
     padding-top: var(--padding-top);
     /*Para que la info no quede debajo de la navBar */
@@ -6,26 +12,32 @@
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
+
     .combos__titulo {
         padding: 32px;
         text-align: center;
         font-size: 20px;
     }
+
     .combos__hero {
         display: flex;
         padding: 32px;
         justify-content: space-around;
+
         .combos__producto {
             width: 300px;
+
             h2 {
                 padding: 8px;
                 color: $rojo;
             }
+
             p {
                 padding: 3.2px 16px;
                 opacity: 0.6;
                 max-width: 90%;
             }
+
             h3 {
                 color: $rojo;
                 text-align: right;
@@ -33,18 +45,22 @@
                 padding-top: 1.6px;
                 padding-left: 32px;
             }
+
             a {
                 width: 300px;
                 height: 300px;
+
                 img {
                     width: 300px;
                     height: 300px;
                     border: 1px black solid;
+
                     &:hover {
                         scale: 1.1;
                     }
                 }
             }
+
             button {
                 font-size: 21px;
                 background-color: $anaranjado;
@@ -52,6 +68,7 @@
                 cursor: pointer;
                 border-radius: var(--radio-border);
                 border: 0px;
+
                 &:hover {
                     opacity: .7;
                 }
@@ -61,3 +78,111 @@
 }
 
 
+
+/* VERSION MOBILE --------  */
+
+@media (max-width: 576px) {
+
+    .desktop__cabecera {
+        display: none;
+    }
+
+    .combos__container {
+        padding-top: 0;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+
+        .combos__titulo {
+            font-size: 25px;
+            padding: 15px 0;
+        }
+
+        .combos__hero {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 0em;
+
+            .combos__producto {
+                /* width: 100vw; */
+                width: 100%;
+                text-align: center;
+                padding-bottom: 32px;
+
+                a {
+                    img {
+                        text-align: center;
+                        border-color: white;
+                    }
+                }
+
+                p {
+                    opacity: 0.6;
+                    padding: 0;
+                    text-align: center;
+                    font-size: 20px;
+                    margin: 0;
+                    max-width: 100%;
+                }
+
+                .h2 {
+                    padding: 8px;
+                    font-size: 30px;
+                }
+
+                .h3 {
+                    color: $anaranjado;
+                    text-align: center;
+                    font-size: 30px;
+                    padding-top: 10px;
+                    padding-left: 0;
+                    padding-bottom: 16px;
+                }
+                button {
+                    font-size: 30px;
+                    background-color: $anaranjado;
+                    padding: 15px;
+            
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

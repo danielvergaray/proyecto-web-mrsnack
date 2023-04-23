@@ -73,6 +73,75 @@ body {
     padding: 0 125px;
     font-size: 25px; }
 
+/* VERSION MOBILE -------  */
+@media (max-width: 576px) {
+  .desktop__cabecera {
+    display: none; }
+  .mobile__cabecera-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    /* width: 100vw; */
+    align-items: center;
+    background-color: black; }
+    .mobile__cabecera-container .mobile__cabecera-logo {
+      width: fit-content;
+      padding-left: 16px; }
+      .mobile__cabecera-container .mobile__cabecera-logo img {
+        width: 100px;
+        height: 100px; }
+    .mobile__cabecera-container .mobile__cabecera-hamburguesa {
+      padding-right: 30px;
+      color: white;
+      font-size: 25px; }
+    .mobile__cabecera-container .mobile__cabecera-x {
+      padding-right: 30px;
+      color: white;
+      font-size: 25px;
+      display: none; }
+    .mobile__cabecera-container .menu-desplegable-mobile {
+      /* width: 100%; */
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      text-align: center;
+      transition: all .5s;
+      z-index: 500;
+      /* padding-top: 20vh; */
+      padding-top: 38%;
+      left: 0px;
+      text-transform: uppercase; }
+      .mobile__cabecera-container .menu-desplegable-mobile li {
+        display: none;
+        line-height: 30px;
+        margin: 50px auto;
+        transition: all .5s;
+        height: fit-content; }
+        .mobile__cabecera-container .menu-desplegable-mobile li a {
+          color: white;
+          font-size: 35px;
+          font-weight: 600;
+          text-decoration: none; }
+    .mobile__cabecera-container #check {
+      display: none; }
+      .mobile__cabecera-container #check:checked ~ .menu-desplegable-mobile {
+        display: block;
+        position: fixed;
+        margin: 0;
+        /* height: 110vh; */
+        height: 100%;
+        top: 0; }
+      .mobile__cabecera-container #check:checked ~ .mobile__cabecera-x {
+        display: block;
+        position: fixed;
+        z-index: 600;
+        padding-left: 270px; }
+    .mobile__cabecera-container #check:checked ~ .menu-desplegable-mobile li {
+      display: block; }
+    .mobile__cabecera-container #check:checked ~ .mobile__cabecera-logo {
+      position: fixed;
+      z-index: 600; } }
+
 #carouselExampleCaptions .carousel-indicators [data-bs-target] {
   width: 50px !important;
   height: 6px;
@@ -258,6 +327,123 @@ body {
     /* Texto se vuelve blanco cuando paso el mouse por la imagen*/
     color: white; }
 
+/* VERSION MOBILE --------  */
+@media (max-width: 576px) {
+  .desktop__cabecera,
+  .extra__izquierda p,
+  .extra__derecha p,
+  .extra__izquierda button,
+  .extra__derecha button,
+  .section__favoritos {
+    display: none; }
+  #carouselExampleCaptions .carousel-inner .carousel1 {
+    /* height: 80vh; */
+    height: 32rem; }
+    #carouselExampleCaptions .carousel-inner .carousel1 .texto-principal {
+      padding-bottom: 100px;
+      margin: 0; }
+      #carouselExampleCaptions .carousel-inner .carousel1 .texto-principal h5 {
+        font-size: 40px; }
+  #carouselExampleCaptions .carousel-inner .carousel2 {
+    /* height: 80vh; */
+    height: 32rem; }
+    #carouselExampleCaptions .carousel-inner .carousel2 .carousel-caption {
+      font-size: 2rem;
+      /* No modificar*/ }
+    #carouselExampleCaptions .carousel-inner .carousel2 .texto-principal-saludables {
+      padding-bottom: 100px;
+      margin: 0; }
+      #carouselExampleCaptions .carousel-inner .carousel2 .texto-principal-saludables h5 {
+        font-size: 40px; }
+  #carouselExampleCaptions .carousel-control-prev,
+  #carouselExampleCaptions .carousel-control-next {
+    scale: 1.5;
+    font-weight: 1000; }
+  #carouselExampleCaptions .flecha {
+    /* Para que la flecha derecha tenga una altura pequeña y pueda usar el menu hamburguesa*/
+    height: fit-content;
+    margin: auto;
+    width: fit-content; }
+  .favoritos-carrusel-mobile {
+    display: block; }
+    .favoritos-carrusel-mobile .carousel-indicators [data-bs-target] {
+      height: 3px; }
+    .favoritos-carrusel-mobile .carousel-contenedor-index {
+      background-color: black;
+      display: flex;
+      /* align-items: center; */
+      /* justify-content: center; */
+      flex-direction: column;
+      /* padding-top: 40px; */
+      /* padding-bottom: 40px; */
+      height: 32rem;
+      text-align: center; }
+      .favoritos-carrusel-mobile .carousel-contenedor-index .carousel-favoritos-titulo h2 {
+        position: absolute;
+        top: 50px;
+        left: 20%;
+        color: white;
+        font-size: 40px; }
+      .favoritos-carrusel-mobile .carousel-contenedor-index .carousel-favoritos {
+        margin: auto;
+        padding-top: 50px; }
+        .favoritos-carrusel-mobile .carousel-contenedor-index .carousel-favoritos .producto-favoritos-nombre {
+          color: white;
+          font-size: 1.5rem;
+          padding-top: 10px; }
+        .favoritos-carrusel-mobile .carousel-contenedor-index .carousel-favoritos .img-carousel {
+          width: 140px;
+          height: 180px; }
+        .favoritos-carrusel-mobile .carousel-contenedor-index .carousel-favoritos .img-carousel-galletas {
+          width: 160px;
+          height: 180px; }
+  .index-flechaIzquierda {
+    position: absolute;
+    left: 20px; }
+  .index-flechaDerecha {
+    position: absolute;
+    right: 20px; }
+  .flecha {
+    /* Para que la flecha derecha tenga una alura pequeña y pueda usar el menu hamburguesa*/
+    height: fit-content;
+    margin: auto; }
+  .extra__container {
+    padding: 32px 0; }
+    .extra__container .extra__imagenes {
+      display: flex;
+      flex-direction: column;
+      /* width: 100vw; */ }
+      .extra__container .extra__imagenes .extra__izquierda {
+        /* width: 100vw; */
+        height: 18rem;
+        padding: 16px 16px 96px; }
+        .extra__container .extra__imagenes .extra__izquierda h2 {
+          font-size: 32px;
+          /* width: 80vw; */
+          color: white; }
+      .extra__container .extra__imagenes .extra__derecha {
+        margin-top: 20px;
+        height: 18rem;
+        padding: 16px 16px 96px; }
+        .extra__container .extra__imagenes .extra__derecha h2 {
+          font-size: 32px;
+          /* width: 80vw; */
+          color: white; }
+  .varios__container {
+    background-color: black;
+    display: flex;
+    color: white;
+    padding: 32px;
+    justify-content: space-between;
+    flex-direction: column; }
+    .varios__container p {
+      font-size: 24px;
+      color: white;
+      text-align: center; }
+    .varios__container .varios__desktop-item {
+      width: 290px;
+      height: 290px; } }
+
 .main__container-saludables {
   background: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url("../imagenes/saludables/frutosSecos.jpg");
   background-position: center center;
@@ -375,6 +561,70 @@ body {
     .combos__saludables button:hover {
       opacity: .8; }
 
+/* VERSION MOBILE --------  */
+@media (max-width: 576px) {
+  .desktop__cabecera,
+  .saludables__container-productos {
+    display: none; }
+  .main__container-saludables {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url("../imagenes/saludables/frutosSecos.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 80vh; */
+    height: 32rem; }
+    .main__container-saludables .hero__texto-saludables {
+      text-align: center;
+      font-size: 32px;
+      height: 40rem;
+      line-height: normal; }
+      .main__container-saludables .hero__texto-saludables p {
+        padding-bottom: 110px;
+        font-size: 40px; }
+  .favoritos-carrusel-mobile .contenedor-saludables {
+    background-color: #d9d9d9;
+    height: 32rem;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    .favoritos-carrusel-mobile .contenedor-saludables .carousel-saludables-titulo {
+      position: relative;
+      bottom: 20px;
+      height: fit-content; }
+      .favoritos-carrusel-mobile .contenedor-saludables .carousel-saludables-titulo h2 {
+        font-size: 2.5rem;
+        color: black;
+        text-align: center; }
+    .favoritos-carrusel-mobile .contenedor-saludables .carousel-control-prev,
+    .favoritos-carrusel-mobile .contenedor-saludables .carousel-control-next {
+      scale: 1.5;
+      font-weight: 1000; }
+    .favoritos-carrusel-mobile .contenedor-saludables .carousel-saludables {
+      margin: auto;
+      padding-top: 50px; }
+      .favoritos-carrusel-mobile .contenedor-saludables .carousel-saludables .carousel-item {
+        position: absolute;
+        text-align: center; }
+        .favoritos-carrusel-mobile .contenedor-saludables .carousel-saludables .carousel-item .producto-saludables-nombre {
+          color: black;
+          font-size: 1.5rem;
+          padding-top: 10px; }
+        .favoritos-carrusel-mobile .contenedor-saludables .carousel-saludables .carousel-item .img-carousel {
+          width: 140px;
+          height: 180px; }
+  .combos__saludables {
+    font-size: 12.8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .combos__saludables h2 {
+      padding-bottom: 16px; }
+    .combos__saludables button {
+      font-size: 20px;
+      padding: 15px;
+      border-color: orangered; } }
+
 .combos__container {
   padding-top: var(--padding-top);
   /*Para que la info no quede debajo de la navBar */
@@ -424,6 +674,53 @@ body {
         border: 0px; }
         .combos__container .combos__hero .combos__producto button:hover {
           opacity: .7; }
+
+/* VERSION MOBILE --------  */
+@media (max-width: 576px) {
+  .desktop__cabecera {
+    display: none; }
+  .combos__container {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column; }
+    .combos__container .combos__titulo {
+      font-size: 25px;
+      padding: 15px 0; }
+    .combos__container .combos__hero {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 0em; }
+      .combos__container .combos__hero .combos__producto {
+        /* width: 100vw; */
+        width: 100%;
+        text-align: center;
+        padding-bottom: 32px; }
+        .combos__container .combos__hero .combos__producto a img {
+          text-align: center;
+          border-color: white; }
+        .combos__container .combos__hero .combos__producto p {
+          opacity: 0.6;
+          padding: 0;
+          text-align: center;
+          font-size: 20px;
+          margin: 0;
+          max-width: 100%; }
+        .combos__container .combos__hero .combos__producto .h2 {
+          padding: 8px;
+          font-size: 30px; }
+        .combos__container .combos__hero .combos__producto .h3 {
+          color: orangered;
+          text-align: center;
+          font-size: 30px;
+          padding-top: 10px;
+          padding-left: 0;
+          padding-bottom: 16px; }
+        .combos__container .combos__hero .combos__producto button {
+          font-size: 30px;
+          background-color: orangered;
+          padding: 15px; } }
 
 .contacto__container {
   background-image: url("../imagenes/contacto/fondo.jpg");
@@ -481,6 +778,46 @@ body {
     .contacto__container .contacto__columnaDerecha h2 {
       font-size: 20px;
       font-weight: bold; }
+
+/* VERSION MOBILE --------  */
+@media (max-width: 576px) {
+  .contacto__container {
+    background-image: url("../imagenes/contacto/fondo-mobile.jpg");
+    display: flex;
+    flex-direction: column;
+    padding: 30px; }
+    .contacto__container .contacto__columnaIzquierda {
+      text-align: left;
+      color: white;
+      font-size: 25px;
+      padding: 50px; }
+    .contacto__container .contacto__central {
+      padding: 32px 0;
+      font-family: 'Barlow Condensed', sans-serif; }
+      .contacto__container .contacto__central .contacto__columnaCentral {
+        width: 100%;
+        padding: 50px; }
+        .contacto__container .contacto__central .contacto__columnaCentral h1 {
+          font-size: 30px;
+          padding-top: 15px; }
+        .contacto__container .contacto__central .contacto__columnaCentral label {
+          padding-top: 18px;
+          font-size: 25px; }
+        .contacto__container .contacto__central .contacto__columnaCentral input {
+          font-size: 25px;
+          margin: 10px;
+          padding: 8px;
+          font-family: 'Barlow Condensed', sans-serif; }
+    .contacto__container .contacto__columnaDerecha {
+      font-size: 25px;
+      line-height: 35px;
+      text-align: left; }
+      .contacto__container .contacto__columnaDerecha h2 {
+        font-size: 20px;
+        font-size: 30px; }
+      .contacto__container .contacto__columnaDerecha h3 {
+        padding: 16px 0;
+        font-size: 30px; } }
 
 .almendras__container {
   padding-top: var(--padding-top);
@@ -553,6 +890,73 @@ body {
         .almendras__container .almendras__info .almendras__boton button:hover {
           opacity: 0.8; }
 
+/* VERSION MOBILE --------  */
+@media (max-width: 576px) {
+  .desktop__cabecera,
+  .almendras__barraSuperior,
+  .almendras__precio h4,
+  .almendras__boton,
+  .almendras__info, .menu-desplegable-mobile {
+    display: none; }
+  .almendras__container {
+    padding: 0; }
+    .almendras__container .almendras__hero {
+      display: flex;
+      padding: 2rem 0 0;
+      flex-direction: column; }
+      .almendras__container .almendras__hero .mobile-almendras__info {
+        display: block;
+        padding: 10px 20px; }
+        .almendras__container .almendras__hero .mobile-almendras__info h1 {
+          font-size: 24px; }
+        .almendras__container .almendras__hero .mobile-almendras__info h2 {
+          font-size: 20px;
+          color: gray;
+          padding-bottom: 10px; }
+        .almendras__container .almendras__hero .mobile-almendras__info i {
+          font-size: 20px; }
+      .almendras__container .almendras__hero .almendras__img img {
+        padding: 20px 0;
+        /* width: 100vw; */
+        width: 100%; }
+      .almendras__container .almendras__hero .mobile-almendras__precio {
+        display: block;
+        padding: 10px 20px; }
+        .almendras__container .almendras__hero .mobile-almendras__precio p {
+          font-size: 40px;
+          color: orangered; }
+      .almendras__container .almendras__hero .mobile-almendras__caracteristicas {
+        display: block;
+        padding: 50px 20px 0px 20px; }
+        .almendras__container .almendras__hero .mobile-almendras__caracteristicas h3 {
+          font-size: 25px;
+          padding: 10px 0px;
+          text-decoration: underline; }
+        .almendras__container .almendras__hero .mobile-almendras__caracteristicas ul {
+          list-style: circle;
+          line-height: 25px;
+          padding-left: 20px;
+          opacity: 0.6;
+          padding-bottom: 25px;
+          font-size: 18px; }
+  .almendras__boton-mobile {
+    position: sticky;
+    top: -100px;
+    bottom: 33px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px; }
+    .almendras__boton-mobile button {
+      font-size: 25px;
+      padding: 8px;
+      background-color: orangered;
+      border-radius: var(--radio-border);
+      cursor: pointer;
+      width: 70%;
+      border: none; }
+  .almendras__info hr {
+    display: none; } }
+
 .footer-container {
   background-color: #d9d9d9;
   text-align: center;
@@ -572,3 +976,23 @@ body {
       color: white;
       text-decoration: none;
       font-size: 30px; }
+
+/* VERSION MOBILE -------  */
+@media (max-width: 576px) {
+  .footer-container .h2 {
+    font-size: 30px;
+    padding-top: 20px; }
+  .footer-container .footer-redes {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    font-size: 30px; }
+  .footer-container .footer-contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 16px; }
+    .footer-container .footer-contacto a {
+      color: white;
+      text-decoration: none;
+      font-size: 30px;
+      line-height: 45px; } }

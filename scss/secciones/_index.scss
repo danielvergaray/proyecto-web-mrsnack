@@ -1,16 +1,29 @@
-#carouselExampleCaptions{
+
+
+// .mobile__cabecera-container,
+// .favoritos__fi,
+// .favoritos__fd,
+// .favoritos-carrusel-mobile {
+//     display: none;
+// }
+
+
+
+#carouselExampleCaptions {
     .carousel-indicators [data-bs-target] {
         width: 50px !important;
         height: 6px;
         margin-right: 10px;
         margin-left: 10px;
         opacity: .9;
-        button{
+
+        button {
             &:hover {
                 opacity: .3;
             }
         }
     }
+
     .carousel-inner {
         .carousel1 {
             background:
@@ -19,16 +32,20 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
-            height: 100vh; /*No modificar*/
+            height: 100vh;
+
+            /*No modificar*/
             .texto-principal {
                 padding-bottom: 160px;
                 padding-top: 0;
+
                 h5 {
                     font-size: 80px;
                     margin: 0;
                 }
             }
         }
+
         .carousel2 {
             background:
                 linear-gradient(rgba(0, 0, 0, 0.6), transparent),
@@ -36,40 +53,44 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
-            height: 100vh; /*No modificar*/
-            
-        
+            height: 100vh;
+            /*No modificar*/
+
+
             .texto-principal-saludables {
                 padding-bottom: 150px;
                 padding-top: 0;
-            
+
                 a {
                     text-decoration: none;
                     color: $blanco;
                 }
-                h5{
+
+                h5 {
                     font-size: 80px;
                     margin: 0;
                 }
             }
         }
     }
+
     .carousel-control-prev,
     .carousel-control-next {
         scale: 1.5;
         font-weight: 1000;
     }
+
     .flecha {
         /* Para que la flecha derecha tenga una altura pequeña y pueda usar el menu hamburguesa*/
         height: fit-content;
         margin: auto;
         width: fit-content;
     }
-    
+
     .index-flechaIzquierda {
         margin-left: 50px;
     }
-    
+
     .index-flechaDerecha {
         margin-right: 50px;
     }
@@ -85,36 +106,43 @@
     text-align: center;
     height: 35rem;
     text-transform: uppercase;
+
     h2 {
         font-size: 40px;
         padding: 1em 0 1em;
         color: $blanco;
     }
+
     .section__favoritos-imagenes {
         display: flex;
         margin: auto 0;
         padding-bottom: 90px;
+
         div {
             display: flex;
             flex-direction: column;
             justify-content: center;
             margin: auto;
             padding: 0;
-            &:first-child{
+
+            &:first-child {
                 img {
                     /*Para modificar tamaño primera imagen*/
                     width: 200px;
                 }
-            } 
+            }
         }
+
         a {
             text-decoration: none;
             color: $blanco;
             padding-top: 25px;
+
             &:hover {
                 scale: 1.2;
             }
         }
+
         img {
             width: 150px;
             height: 200px;
@@ -127,12 +155,15 @@
 .extra__container {
     padding: 32px 8px;
     text-transform: uppercase;
+
     p {
         color: $blanco;
     }
+
     .extra__imagenes {
         display: grid;
         grid-template-columns: 1fr 1fr;
+
         .extra__izquierda {
             grid-column: 1;
             background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
@@ -145,12 +176,14 @@
             margin: auto;
             padding: 128px 48px 72px;
             color: $blanco;
+
             p {
                 padding: 32px 0;
                 font-size: 16px;
                 line-height: 24px;
             }
-            button{
+
+            button {
                 padding: 16px;
                 font-size: 25px;
                 margin: auto;
@@ -161,12 +194,14 @@
                 cursor: pointer;
                 border-radius: var(--radio-border);
                 width: fit-content;
-                &:hover{
+
+                &:hover {
                     background-color: $anaranjado;
                     border: $anaranjado;
                 }
             }
         }
+
         .extra__derecha {
             grid-column: 2;
             background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
@@ -179,11 +214,13 @@
             margin: auto;
             padding: 128px 48px 96px 48px;
             color: $blanco;
+
             p {
                 padding: 32px 0;
                 font-size: 16px;
                 line-height: 24px;
             }
+
             button {
                 padding: 16px;
                 font-size: 25px;
@@ -195,12 +232,13 @@
                 cursor: pointer;
                 border-radius: var(--radio-border);
                 width: fit-content;
+
                 &:hover {
                     background-color: $anaranjado;
                     border: $anaranjado;
                 }
             }
-            }
+        }
     }
 }
 
@@ -211,29 +249,34 @@
     padding: 96px;
     justify-content: space-around;
     text-transform: uppercase;
+
     p {
         font-size: 30px;
         color: $negro;
         text-align: center;
     }
-    .varios__hover-imagenes{
+
+    .varios__hover-imagenes {
 
         .varios___imagenes {
             text-align: center;
             overflow: hidden;
+
             /* Para que el zoom se haga dentro del recuadro de la imagen*/
             .varios__desktop-item {
                 width: 17em;
                 height: 19em;
                 transition: 0.5s;
                 object-fit: cover;
+
                 &:hover {
                     transform: scale(1.2);
                 }
             }
         }
+
         &:hover {
-            
+
             .varios__hover-texto {
                 /* Texto se vuelve blanco cuando paso el mouse por la imagen*/
                 color: $blanco;
@@ -243,6 +286,196 @@
 }
 
 
+/* VERSION MOBILE --------  */
+
+@media (max-width: 576px) {
+
+    .desktop__cabecera,
+    .extra__izquierda p,
+    .extra__derecha p,
+    .extra__izquierda button,
+    .extra__derecha button,
+    .section__favoritos{
+        display: none;
+    }
+    
+
+#carouselExampleCaptions{
+    .carousel-inner{
+        .carousel1 {
+            /* height: 80vh; */
+            height: 32rem;
+        
+            // .carousel-caption {
+            //     font-size: 2rem;
+            //     /* No modificar*/
+            // }
+        
+            .texto-principal {
+                padding-bottom: 100px;
+                margin: 0;
+        
+                h5 {
+                    font-size: 40px;
+                }
+            }
+        
+        }
+        
+        .carousel2 {
+            /* height: 80vh; */
+            height: 32rem;
+        
+            .carousel-caption {
+                font-size: 2rem;
+                /* No modificar*/
+            }
+        
+            .texto-principal-saludables {
+                padding-bottom: 100px;
+                margin: 0;
+        
+                h5 {
+                    font-size: 40px;
+                }
+            }
+        
+        }
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        scale: 1.5;
+        font-weight: 1000;
+    }
+    .flecha {
+        /* Para que la flecha derecha tenga una altura pequeña y pueda usar el menu hamburguesa*/
+        height: fit-content;
+        margin: auto;
+        width: fit-content;
+    }
+    
+}
 
 
+.favoritos-carrusel-mobile {
+    display: block;
+    .carousel-indicators [data-bs-target] {
+        height: 3px;
+    }
+    .carousel-contenedor-index {
+        background-color: $negro;
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: center; */
+        flex-direction: column;
+        /* padding-top: 40px; */
+        /* padding-bottom: 40px; */
+        height: 32rem;
+        text-align: center;
+    
+        .carousel-favoritos-titulo {
+            h2 {
+                position: absolute;
+                top: 50px;
+                left: 20%;
+                color: $blanco;
+                font-size: 40px;
+            }
+        }
+    
+        .carousel-favoritos {
+            margin: auto;
+            padding-top: 50px;
+    
+            .producto-favoritos-nombre {
+                color: white;
+                font-size: 1.5rem;
+                padding-top: 10px;
+            }
+    
+            .img-carousel {
+                width: 140px;
+                height: 180px;
+            }
+    
+            .img-carousel-galletas {
+                width: 160px;
+                height: 180px;
+            }
+        }
+    }
+    
+}
+
+
+
+.index-flechaIzquierda {
+    position: absolute;
+    left: 20px;
+}
+
+.index-flechaDerecha {
+    position: absolute;
+    right: 20px;
+}
+
+
+.flecha {
+    /* Para que la flecha derecha tenga una alura pequeña y pueda usar el menu hamburguesa*/
+    height: fit-content;
+    margin: auto;
+}
+
+.extra__container {
+    padding: 32px 0;
+    .extra__imagenes {
+        display: flex;
+        flex-direction: column;
+
+        /* width: 100vw; */
+        .extra__izquierda {
+            /* width: 100vw; */
+            height: 18rem;
+            padding: 16px 16px 96px;
+            h2 {
+                font-size: 32px;
+                /* width: 80vw; */
+                color: white;
+            }
+        }
+        .extra__derecha {
+            margin-top: 20px;
+            height: 18rem;
+            padding: 16px 16px 96px;
+            h2 {
+                font-size: 32px;
+                /* width: 80vw; */
+                color: white;
+            }
+        }
+    }
+}
+    
+
+
+.varios__container {
+    background-color: black;
+    display: flex;
+    color: white;
+    padding: 32px;
+    justify-content: space-between;
+    flex-direction: column;
+    p {
+        font-size: 24px;
+        color: white;
+        text-align: center;
+    }
+    .varios__desktop-item {
+        width: 290px;
+        height: 290px;
+    }
+}
+
+
+}
 

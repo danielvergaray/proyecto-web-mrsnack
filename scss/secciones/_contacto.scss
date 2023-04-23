@@ -68,11 +68,65 @@
 }
 
 
+/* VERSION MOBILE --------  */
+
+@media (max-width: 576px) {
+
+.contacto__container {
+    background-image: url("../imagenes/contacto/fondo-mobile.jpg");
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    
+    .contacto__columnaIzquierda {
+        text-align: left;
+        color: white;
+        font-size: 25px;
+        padding: 50px;
+    }
+    .contacto__central {
+        padding: 32px 0;
+        font-family: 'Barlow Condensed', sans-serif;
+        .contacto__columnaCentral {
+            width: 100%;
+            padding: 50px;
+            h1 {
+                font-size: 30px;
+                padding-top: 15px;
+            }
+            label {
+                padding-top: 18px;
+                font-size: 25px;
+            }
+            input {
+                font-size: 25px;
+                margin: 10px;
+                padding: 8px;
+                font-family: 'Barlow Condensed', sans-serif;
+                
+            }
+        }
+    }
+    .contacto__columnaDerecha {
+        font-size: 25px;
+        line-height: 35px;
+        text-align: left;
+        h2 {
+            font-size: 20px;
+            font-size: 30px;
+        }
+        h3 {
+            padding: 16px 0;
+            font-size: 30px;
+        }
+    }
+}
 
 
 
 
 
 
+}
 
 

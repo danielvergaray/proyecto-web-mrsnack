@@ -55,3 +55,106 @@
         }
     }
 }
+
+
+
+/* VERSION MOBILE -------  */
+@media (max-width: 576px) {
+
+    .desktop__cabecera{
+        display: none;
+    }
+    .mobile__cabecera-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+        /* width: 100vw; */
+        align-items: center;
+        background-color: black;
+        .mobile__cabecera-logo {
+            width: fit-content;
+            padding-left: 16px;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .mobile__cabecera-hamburguesa {
+            padding-right: 30px;
+            color: white;
+            font-size: 25px;
+        }
+        .mobile__cabecera-x {
+            padding-right: 30px;
+            color: white;
+            font-size: 25px;
+            display: none;
+        }
+        
+        .menu-desplegable-mobile {
+            /* width: 100%; */
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            text-align: center;
+            transition: all .5s;
+            z-index: 500;
+            /* padding-top: 20vh; */
+            padding-top: 38%;
+            left: 0px;
+            text-transform: uppercase;
+            li {
+                display: none;
+                line-height: 30px;
+                margin: 50px auto;
+                transition: all .5s;
+                height: fit-content;
+                a {
+                    color: white;
+                    font-size: 35px;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+            }
+        }
+    
+        
+    
+        
+    
+        #check {
+            display: none;
+            &:checked~.menu-desplegable-mobile {
+                display: block;
+                position: fixed;
+                margin: 0;
+                /* height: 110vh; */
+                height: 100%;
+                top: 0;
+            }
+            &:checked~.mobile__cabecera-x {
+                display: block;
+                position: fixed;
+                z-index: 600;
+                padding-left: 270px;
+            }
+        }
+    
+    
+    
+        #check:checked~.menu-desplegable-mobile li {
+            display: block;
+        }
+    
+        #check:checked~.mobile__cabecera-logo {
+            position: fixed;
+            z-index: 600;
+        }
+    }
+
+
+    
+
+
+    
+}
