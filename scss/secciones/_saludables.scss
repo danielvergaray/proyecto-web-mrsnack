@@ -1,12 +1,5 @@
-// .mobile__cabecera-container,
-// .mobile__saludables-productos,
-// .menu-desplegable-mobile {
-//     display: none;
-// }
 
-
-
-.main__container-saludables {
+.heroSaludables {
     background:
         linear-gradient(rgba(0, 0, 0, 0.6), transparent),
         url("../imagenes/saludables/frutosSecos.jpg");
@@ -16,7 +9,7 @@
     /* height: 100vh; */
     height: 45rem;
 
-    .hero__texto-saludables {
+    .heroSaludables__texto {
         margin: auto;
         width: 70%;
         line-height: 97px;
@@ -34,7 +27,7 @@
     }
 }
 
-.saludables__container-productos {
+.productosSaludables {
     background-color: $gris-claro;
     padding: 2em;
     text-transform: uppercase;
@@ -52,7 +45,7 @@
         padding-top: 16px;
     }
 
-    .productosSaludables-3img {
+    .productosSaludables__3img {
         display: grid;
         grid-template-columns: 33% 33% 33%;
         padding: 64px 0;
@@ -115,7 +108,7 @@
 
     }
 
-    .productosSaludables-2img {
+    .productosSaludables__2img {
         display: grid;
         grid-template-columns: 50% 50%;
         padding: 32px 0 64px 0;
@@ -193,12 +186,12 @@
 
 @media (max-width: 576px) {
 
-    .desktop__cabecera,
-    .saludables__container-productos {
+    .desktopCabecera,
+    .productosSaludables {
         display: none;
     }
 
-    .main__container-saludables {
+    .heroSaludables {
         background:
             linear-gradient(rgba(0, 0, 0, 0.6), transparent),
             url("../imagenes/saludables/frutosSecos.jpg");
@@ -208,7 +201,7 @@
         /* height: 80vh; */
         height: 32rem;
 
-        .hero__texto-saludables {
+        .heroSaludables__texto {
             text-align: center;
             font-size: 32px;
             height: 40rem;

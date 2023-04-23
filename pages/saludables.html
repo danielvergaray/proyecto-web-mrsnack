@@ -19,17 +19,17 @@
 <body>
     <header>
         <!----------------- cabecera mobile ------------------------>
-        <div class="mobile__cabecera-container">
-            <a class="mobile__cabecera-logo" href="../index.html"><img src="../imagenes/index/logo.png" alt="logo"></a>
+        <div class="mobileCabecera">
+            <a class="mobileCabecera__logo" href="../index.html"><img src="../imagenes/index/logo.png" alt="logo"></a>
             <input type="checkbox" id="check">
-            <label for="check" class="mobile__cabecera-hamburguesa">
+            <label for="check" class="mobileCabecera__hamburguesa">
                 <i class="fa-solid fa-bars"></i>
             </label>
-            <label for="check" class="mobile__cabecera-x">
+            <label for="check" class="mobileCabecera__x">
                 <i class="fa-solid fa-xmark"></i>
             </label>
             <!-- <a class="mobile__carrito" href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
-            <ul class="menu-desplegable-mobile">
+            <ul class="mobileCabecera__menuDesplegable">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./saludables.html">Saludables</a></li>
                 <li><a href="./combos.html">Combos</a> </li>
@@ -40,7 +40,7 @@
 
         <!----------------- cabecera mobile ------------------------------>
         <!----------------- cabecera desktop ------------------------>
-        <div class="desktop__cabecera">
+        <div class="desktopCabecera">
             <a href="../index.html"><img src="../imagenes/index/logo.png" alt="logo"></a>
             <nav>
                 <ul>
@@ -52,28 +52,28 @@
                 </ul>
             </nav>
 
-            <form class="buscar-contenedor" action="" method="post">
+            <form class="desktopCabecera__buscarContenedor" action="" method="post">
                 <label for="buscar"></label>
-                <input type="text" class="buscar" placeholder="¿Que deseas buscar?">
+                <input type="text" class="desktopCabecera__buscar" placeholder="¿Que deseas buscar?">
             </form>
             <div>
-                <a class="carrito" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="desktopCabecera__carrito" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </div>
         <!--------------- cabecera desktop --------------------->
     </header>
-    <main class="main__container-saludables">
+    <main class="heroSaludables">
         <!--  Para desktop y mobile -->
-        <div class="hero__texto-saludables">
+        <div class="heroSaludables__texto">
             <p>EN MR. SNACK CONTAMOS CON UNA GRAN VARIEDAD DE PRODUCTOS SALUDABLES PARA TI</p>
         </div>
 
     </main>
-    <section class="saludables__container-productos">
+    <section class="productosSaludables">
         <div>
             <h1>PRODUCTOS SALUDABLES</h1>
         </div>
-        <div class="productosSaludables-3img">
+        <div class="productosSaludables__3img">
             <div class="almendras">
                 <a href="./almendras.html"><img src="../imagenes/almendrasSinFondo.png" alt="imagen almendras"></a>
                 <a href="./almendras.html">Almendras</a>
@@ -89,7 +89,7 @@
 
 
         </div>
-        <div class="productosSaludables-2img">
+        <div class="productosSaludables__2img">
             <div class="castanas">
                 <a href="#"><img src="../imagenes/castanas.png" alt="imagen castanas"></a>
                 <a href="#">Castañas</a>
@@ -168,14 +168,14 @@
     </section>
     <footer>
         <!--------------------Footer desktop --------------------->
-        <div class="footer-container">
+        <div class="footerContainer">
             <h2>Conoce nuestras redes</h2>
-            <div class="footer-redes">
+            <div class="footerContainer__redes">
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#"><i class="fa-brands fa-tiktok"></i></a>
             </div>
-            <div class="footer-contacto">
+            <div class="footerContainer__contacto">
                 <a href="./contacto.html">Contactanos</a>
                 <a href="#">Politica</a>
                 <a href="#">Ayuda</a>

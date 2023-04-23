@@ -1,14 +1,5 @@
 
 
-// .mobile__cabecera-container,
-// .favoritos__fi,
-// .favoritos__fd,
-// .favoritos-carrusel-mobile {
-//     display: none;
-// }
-
-
-
 #carouselExampleCaptions {
     .carousel-indicators [data-bs-target] {
         width: 50px !important;
@@ -152,7 +143,7 @@
 
 
 
-.extra__container {
+.extraContainer {
     padding: 32px 8px;
     text-transform: uppercase;
 
@@ -160,11 +151,11 @@
         color: $blanco;
     }
 
-    .extra__imagenes {
+    .extraContainer__imagenes {
         display: grid;
         grid-template-columns: 1fr 1fr;
 
-        .extra__izquierda {
+        .extraContainer__izquierda {
             grid-column: 1;
             background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
                 url("../imagenes/index/catering.jpg");
@@ -202,7 +193,7 @@
             }
         }
 
-        .extra__derecha {
+        .extraContainer__derecha {
             grid-column: 2;
             background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
                 url("../imagenes/index/tienda.jpg");
@@ -243,7 +234,7 @@
 }
 
 
-.varios__container {
+.variosContainer {
     background-color: $negro;
     display: flex;
     padding: 96px;
@@ -256,9 +247,9 @@
         text-align: center;
     }
 
-    .varios__hover-imagenes {
+    .variosContainer__hover-imagenes {
 
-        .varios___imagenes {
+        .variosContainer___imagenes {
             text-align: center;
             overflow: hidden;
 
@@ -277,7 +268,7 @@
 
         &:hover {
 
-            .varios__hover-texto {
+            .variosContainer__hover-texto {
                 /* Texto se vuelve blanco cuando paso el mouse por la imagen*/
                 color: $blanco;
             }
@@ -290,11 +281,11 @@
 
 @media (max-width: 576px) {
 
-    .desktop__cabecera,
-    .extra__izquierda p,
-    .extra__derecha p,
-    .extra__izquierda button,
-    .extra__derecha button,
+    .desktopCabecera,
+    .extraContainer__izquierda p,
+    .extraContainer__derecha p,
+    .extraContainer__izquierda button,
+    .extraContainer__derecha button,
     .section__favoritos{
         display: none;
     }
@@ -426,14 +417,14 @@
     margin: auto;
 }
 
-.extra__container {
+.extraContainer {
     padding: 32px 0;
-    .extra__imagenes {
+    .extraContainer__imagenes {
         display: flex;
         flex-direction: column;
 
         /* width: 100vw; */
-        .extra__izquierda {
+        .extraContainer__izquierda {
             /* width: 100vw; */
             height: 18rem;
             padding: 16px 16px 96px;
@@ -443,7 +434,7 @@
                 color: white;
             }
         }
-        .extra__derecha {
+        .extraContainer__derecha {
             margin-top: 20px;
             height: 18rem;
             padding: 16px 16px 96px;
@@ -458,7 +449,7 @@
     
 
 
-.varios__container {
+.variosContainer{
     background-color: black;
     display: flex;
     color: white;

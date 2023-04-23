@@ -1,20 +1,12 @@
-// .mobile__cabecera-container,
-// .menu-desplegable-mobile,
-// .mobile-almendras__info,
-// .mobile-almendras__precio,
-// .mobile-almendras__caracteristicas {
-//     display: none;
-// }
 
-
-.almendras__container {
+.almendrasContainer {
     padding-top: var(--padding-top);
     /*Para que la info no quede debajo de la navBar */
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
 
-    .almendras__barraSuperior {
+    .almendrasContainer__barraSuperior {
         padding: 16px 0 0 16px;
         word-spacing: 15px;
 
@@ -28,12 +20,12 @@
         }
     }
 
-    .almendras__hero {
+    .almendrasContainer__hero {
         display: grid;
         grid-template-columns: 50% 50%;
         padding: 32px;
 
-        .almendras__img {
+        .almendrasContainer__img {
             grid-column: 1;
 
             img {
@@ -43,7 +35,7 @@
         }
     }
 
-    .almendras__info {
+    .almendrasContainer__info {
         grid-column: 2;
         letter-spacing: 2px;
         padding: 32px;
@@ -77,7 +69,7 @@
             padding-bottom: 25px;
         }
 
-        .almendras__precio {
+        .almendrasContainer__precio {
             display: flex;
             justify-content: space-between;
             color: $anaranjado;
@@ -89,7 +81,7 @@
             }
         }
 
-        .almendras__boton {
+        .almendrasContainer__boton {
             display: flex;
             justify-content: center;
             padding-top: 20px;
@@ -125,22 +117,22 @@
 
 @media (max-width: 576px) {
 
-    .desktop__cabecera,
-    .almendras__barraSuperior,
-    .almendras__precio h4,
-    .almendras__boton,
-    .almendras__info,.menu-desplegable-mobile {
+    .desktopCabecera,
+    .almendrasContainer__barraSuperior,
+    .almendrasContainer__precio h4,
+    .almendrasContainer__boton,
+    .almendrasContainer__info,.mobileCabecera__menuDesplegable {
         display: none;
     }
 
-    .almendras__container {
+    .almendrasContainer {
         padding: 0;
 
-        .almendras__hero {
+        .almendrasContainer__hero {
             display: flex;
             padding: 2rem 0 0;
             flex-direction: column;
-            .mobile-almendras__info {
+            .mobileAlmendras__info {
                 display: block;
                 padding: 10px 20px;
     
@@ -159,14 +151,14 @@
                 }
                 
                 }
-                .almendras__img {
+                .almendrasContainer__img {
                     img {
                         padding: 20px 0;
                         /* width: 100vw; */
                         width: 100%;
                     }
                 }
-                .mobile-almendras__precio {
+                .mobileAlmendras__precio {
                     display: block;
                     padding: 10px 20px;
             
@@ -176,7 +168,7 @@
                     }
                 }
     
-                .mobile-almendras__caracteristicas {
+                .almendrasContainer__caracteristicas {
                     display: block;
                     padding: 50px 20px 0px 20px;
     
@@ -217,11 +209,14 @@
             cursor: pointer;
             width: 70%;
             border: none;
+            color: $negro;
+            text-transform: uppercase;
+            font-family: 'Barlow Condensed', sans-serif;
         }
     }
 
 
-    .almendras__info hr {
+    .almendrasContainer__info hr {
         display: none;
     }
 

@@ -1,4 +1,4 @@
-.desktop__cabecera {
+.desktopCabecera {
     display: flex;
     @include propiedades-cabecera($negro, 48px, 100%);
     // background-color: $negro;
@@ -37,9 +37,9 @@
     form {
         display: flex;
     }
-    .buscar-contenedor {
+    .desktopCabecera__buscarContenedor {
         padding-left: 100px;
-        .buscar {
+        .desktopCabecera__buscar {
             font-size: 21px;
             border-radius: 15px;
             text-align: center;
@@ -49,7 +49,7 @@
     }
     div{
     
-        .carrito {
+        .desktopCabecera__carrito {
             padding: 0 125px;
             font-size: 25px;
         }
@@ -61,17 +61,17 @@
 /* VERSION MOBILE -------  */
 @media (max-width: 576px) {
 
-    .desktop__cabecera{
+    .desktopCabecera{
         display: none;
     }
-    .mobile__cabecera-container {
+    .mobileCabecera {
         display: flex;
         justify-content: space-between;
         padding: 8px;
         /* width: 100vw; */
         align-items: center;
         background-color: black;
-        .mobile__cabecera-logo {
+        .mobileCabecera__logo {
             width: fit-content;
             padding-left: 16px;
             img {
@@ -79,19 +79,19 @@
                 height: 100px;
             }
         }
-        .mobile__cabecera-hamburguesa {
+        .mobileCabecera__hamburguesa {
             padding-right: 30px;
             color: white;
             font-size: 25px;
         }
-        .mobile__cabecera-x {
+        .mobileCabecera__x {
             padding-right: 30px;
             color: white;
             font-size: 25px;
             display: none;
         }
         
-        .menu-desplegable-mobile {
+        .mobileCabecera__menuDesplegable {
             /* width: 100%; */
             width: 100%;
             height: 100%;
@@ -124,7 +124,7 @@
     
         #check {
             display: none;
-            &:checked~.menu-desplegable-mobile {
+            &:checked~.mobileCabecera__menuDesplegable {
                 display: block;
                 position: fixed;
                 margin: 0;
@@ -132,7 +132,7 @@
                 height: 100%;
                 top: 0;
             }
-            &:checked~.mobile__cabecera-x {
+            &:checked~.mobileCabecera__x {
                 display: block;
                 position: fixed;
                 z-index: 600;
@@ -142,7 +142,7 @@
     
     
     
-        #check:checked~.menu-desplegable-mobile li {
+        #check:checked~.mobileCabecera__menuDesplegable li {
             display: block;
         }
     

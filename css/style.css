@@ -4,13 +4,12 @@
   margin: 0;
   /* font-family: 'Barlow Condensed', sans-serif; */
   /* text-transform: uppercase; */
-  box-sizing: border-box;
-  /* border: 1px solid red; */ }
+  box-sizing: border-box; }
 
 body {
   font-family: 'Barlow Condensed', sans-serif; }
 
-.flex-spaceBetween, .desktop__cabecera nav ul, .footer-container .footer-redes, .footer-container .footer-contacto {
+.flex-spaceBetween, .desktopCabecera nav ul, .footerContainer .footerContainer__redes, .footerContainer .footerContainer__contacto {
   display: flex;
   justify-content: space-between; }
 
@@ -22,19 +21,19 @@ body {
   /*BOTONES*/
   --radio-border: 15px; }
 
-.mobile__cabecera-container,
+.mobileCabecera,
 .favoritos__fi,
 .favoritos__fd,
 .almendras__boton-mobile,
 .favoritos-carrusel-mobile,
 .mobile__saludables-productos,
-.menu-desplegable-mobile,
-.mobile-almendras__info,
-.mobile-almendras__precio,
-.mobile-almendras__caracteristicas {
+.mobileCabecera__menuDesplegable,
+.mobileAlmendras__info,
+.mobileAlmendras__precio,
+.almendrasContainer__caracteristicas {
   display: none; }
 
-.desktop__cabecera {
+.desktopCabecera {
   display: flex;
   background-color: black;
   height: 48px;
@@ -45,61 +44,61 @@ body {
   position: fixed;
   z-index: 100;
   text-transform: uppercase; }
-  .desktop__cabecera nav ul {
+  .desktopCabecera nav ul {
     width: 90%;
     padding: 0;
     margin: 0; }
-    .desktop__cabecera nav ul li {
+    .desktopCabecera nav ul li {
       list-style: none;
       padding-left: 40px; }
-      .desktop__cabecera nav ul li a:hover {
+      .desktopCabecera nav ul li a:hover {
         background-color: blue; }
-  .desktop__cabecera a {
+  .desktopCabecera a {
     scale: 0.45;
     text-decoration: none;
     color: white;
     font-size: 25px; }
-  .desktop__cabecera form {
+  .desktopCabecera form {
     display: flex; }
-  .desktop__cabecera .buscar-contenedor {
+  .desktopCabecera .desktopCabecera__buscarContenedor {
     padding-left: 100px; }
-    .desktop__cabecera .buscar-contenedor .buscar {
+    .desktopCabecera .desktopCabecera__buscarContenedor .desktopCabecera__buscar {
       font-size: 21px;
       border-radius: 15px;
       text-align: center;
       font-family: 'Barlow Condensed', sans-serif;
       height: 40.70px; }
-  .desktop__cabecera div .carrito {
+  .desktopCabecera div .desktopCabecera__carrito {
     padding: 0 125px;
     font-size: 25px; }
 
 /* VERSION MOBILE -------  */
 @media (max-width: 576px) {
-  .desktop__cabecera {
+  .desktopCabecera {
     display: none; }
-  .mobile__cabecera-container {
+  .mobileCabecera {
     display: flex;
     justify-content: space-between;
     padding: 8px;
     /* width: 100vw; */
     align-items: center;
     background-color: black; }
-    .mobile__cabecera-container .mobile__cabecera-logo {
+    .mobileCabecera .mobileCabecera__logo {
       width: fit-content;
       padding-left: 16px; }
-      .mobile__cabecera-container .mobile__cabecera-logo img {
+      .mobileCabecera .mobileCabecera__logo img {
         width: 100px;
         height: 100px; }
-    .mobile__cabecera-container .mobile__cabecera-hamburguesa {
+    .mobileCabecera .mobileCabecera__hamburguesa {
       padding-right: 30px;
       color: white;
       font-size: 25px; }
-    .mobile__cabecera-container .mobile__cabecera-x {
+    .mobileCabecera .mobileCabecera__x {
       padding-right: 30px;
       color: white;
       font-size: 25px;
       display: none; }
-    .mobile__cabecera-container .menu-desplegable-mobile {
+    .mobileCabecera .mobileCabecera__menuDesplegable {
       /* width: 100%; */
       width: 100%;
       height: 100%;
@@ -111,34 +110,34 @@ body {
       padding-top: 38%;
       left: 0px;
       text-transform: uppercase; }
-      .mobile__cabecera-container .menu-desplegable-mobile li {
+      .mobileCabecera .mobileCabecera__menuDesplegable li {
         display: none;
         line-height: 30px;
         margin: 50px auto;
         transition: all .5s;
         height: fit-content; }
-        .mobile__cabecera-container .menu-desplegable-mobile li a {
+        .mobileCabecera .mobileCabecera__menuDesplegable li a {
           color: white;
           font-size: 35px;
           font-weight: 600;
           text-decoration: none; }
-    .mobile__cabecera-container #check {
+    .mobileCabecera #check {
       display: none; }
-      .mobile__cabecera-container #check:checked ~ .menu-desplegable-mobile {
+      .mobileCabecera #check:checked ~ .mobileCabecera__menuDesplegable {
         display: block;
         position: fixed;
         margin: 0;
         /* height: 110vh; */
         height: 100%;
         top: 0; }
-      .mobile__cabecera-container #check:checked ~ .mobile__cabecera-x {
+      .mobileCabecera #check:checked ~ .mobileCabecera__x {
         display: block;
         position: fixed;
         z-index: 600;
         padding-left: 270px; }
-    .mobile__cabecera-container #check:checked ~ .menu-desplegable-mobile li {
+    .mobileCabecera #check:checked ~ .mobileCabecera__menuDesplegable li {
       display: block; }
-    .mobile__cabecera-container #check:checked ~ .mobile__cabecera-logo {
+    .mobileCabecera #check:checked ~ .mobile__cabecera-logo {
       position: fixed;
       z-index: 600; } }
 
@@ -235,15 +234,15 @@ body {
       width: 150px;
       height: 200px; }
 
-.extra__container {
+.extraContainer {
   padding: 32px 8px;
   text-transform: uppercase; }
-  .extra__container p {
+  .extraContainer p {
     color: white; }
-  .extra__container .extra__imagenes {
+  .extraContainer .extraContainer__imagenes {
     display: grid;
     grid-template-columns: 1fr 1fr; }
-    .extra__container .extra__imagenes .extra__izquierda {
+    .extraContainer .extraContainer__imagenes .extraContainer__izquierda {
       grid-column: 1;
       background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../imagenes/index/catering.jpg");
       background-position: center center;
@@ -254,11 +253,11 @@ body {
       margin: auto;
       padding: 128px 48px 72px;
       color: white; }
-      .extra__container .extra__imagenes .extra__izquierda p {
+      .extraContainer .extraContainer__imagenes .extraContainer__izquierda p {
         padding: 32px 0;
         font-size: 16px;
         line-height: 24px; }
-      .extra__container .extra__imagenes .extra__izquierda button {
+      .extraContainer .extraContainer__imagenes .extraContainer__izquierda button {
         padding: 16px;
         font-size: 25px;
         margin: auto;
@@ -269,10 +268,10 @@ body {
         cursor: pointer;
         border-radius: var(--radio-border);
         width: fit-content; }
-        .extra__container .extra__imagenes .extra__izquierda button:hover {
+        .extraContainer .extraContainer__imagenes .extraContainer__izquierda button:hover {
           background-color: orangered;
           border: orangered; }
-    .extra__container .extra__imagenes .extra__derecha {
+    .extraContainer .extraContainer__imagenes .extraContainer__derecha {
       grid-column: 2;
       background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../imagenes/index/tienda.jpg");
       background-position: center center;
@@ -283,11 +282,11 @@ body {
       margin: auto;
       padding: 128px 48px 96px 48px;
       color: white; }
-      .extra__container .extra__imagenes .extra__derecha p {
+      .extraContainer .extraContainer__imagenes .extraContainer__derecha p {
         padding: 32px 0;
         font-size: 16px;
         line-height: 24px; }
-      .extra__container .extra__imagenes .extra__derecha button {
+      .extraContainer .extraContainer__imagenes .extraContainer__derecha button {
         padding: 16px;
         font-size: 25px;
         margin: auto;
@@ -298,42 +297,42 @@ body {
         cursor: pointer;
         border-radius: var(--radio-border);
         width: fit-content; }
-        .extra__container .extra__imagenes .extra__derecha button:hover {
+        .extraContainer .extraContainer__imagenes .extraContainer__derecha button:hover {
           background-color: orangered;
           border: orangered; }
 
-.varios__container {
+.variosContainer {
   background-color: black;
   display: flex;
   padding: 96px;
   justify-content: space-around;
   text-transform: uppercase; }
-  .varios__container p {
+  .variosContainer p {
     font-size: 30px;
     color: black;
     text-align: center; }
-  .varios__container .varios__hover-imagenes .varios___imagenes {
+  .variosContainer .variosContainer__hover-imagenes .variosContainer___imagenes {
     text-align: center;
     overflow: hidden;
     /* Para que el zoom se haga dentro del recuadro de la imagen*/ }
-    .varios__container .varios__hover-imagenes .varios___imagenes .varios__desktop-item {
+    .variosContainer .variosContainer__hover-imagenes .variosContainer___imagenes .varios__desktop-item {
       width: 17em;
       height: 19em;
       transition: 0.5s;
       object-fit: cover; }
-      .varios__container .varios__hover-imagenes .varios___imagenes .varios__desktop-item:hover {
+      .variosContainer .variosContainer__hover-imagenes .variosContainer___imagenes .varios__desktop-item:hover {
         transform: scale(1.2); }
-  .varios__container .varios__hover-imagenes:hover .varios__hover-texto {
+  .variosContainer .variosContainer__hover-imagenes:hover .variosContainer__hover-texto {
     /* Texto se vuelve blanco cuando paso el mouse por la imagen*/
     color: white; }
 
 /* VERSION MOBILE --------  */
 @media (max-width: 576px) {
-  .desktop__cabecera,
-  .extra__izquierda p,
-  .extra__derecha p,
-  .extra__izquierda button,
-  .extra__derecha button,
+  .desktopCabecera,
+  .extraContainer__izquierda p,
+  .extraContainer__derecha p,
+  .extraContainer__izquierda button,
+  .extraContainer__derecha button,
   .section__favoritos {
     display: none; }
   #carouselExampleCaptions .carousel-inner .carousel1 {
@@ -407,51 +406,51 @@ body {
     /* Para que la flecha derecha tenga una alura pequeña y pueda usar el menu hamburguesa*/
     height: fit-content;
     margin: auto; }
-  .extra__container {
+  .extraContainer {
     padding: 32px 0; }
-    .extra__container .extra__imagenes {
+    .extraContainer .extraContainer__imagenes {
       display: flex;
       flex-direction: column;
       /* width: 100vw; */ }
-      .extra__container .extra__imagenes .extra__izquierda {
+      .extraContainer .extraContainer__imagenes .extraContainer__izquierda {
         /* width: 100vw; */
         height: 18rem;
         padding: 16px 16px 96px; }
-        .extra__container .extra__imagenes .extra__izquierda h2 {
+        .extraContainer .extraContainer__imagenes .extraContainer__izquierda h2 {
           font-size: 32px;
           /* width: 80vw; */
           color: white; }
-      .extra__container .extra__imagenes .extra__derecha {
+      .extraContainer .extraContainer__imagenes .extraContainer__derecha {
         margin-top: 20px;
         height: 18rem;
         padding: 16px 16px 96px; }
-        .extra__container .extra__imagenes .extra__derecha h2 {
+        .extraContainer .extraContainer__imagenes .extraContainer__derecha h2 {
           font-size: 32px;
           /* width: 80vw; */
           color: white; }
-  .varios__container {
+  .variosContainer {
     background-color: black;
     display: flex;
     color: white;
     padding: 32px;
     justify-content: space-between;
     flex-direction: column; }
-    .varios__container p {
+    .variosContainer p {
       font-size: 24px;
       color: white;
       text-align: center; }
-    .varios__container .varios__desktop-item {
+    .variosContainer .varios__desktop-item {
       width: 290px;
       height: 290px; } }
 
-.main__container-saludables {
+.heroSaludables {
   background: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url("../imagenes/saludables/frutosSecos.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   /* height: 100vh; */
   height: 45rem; }
-  .main__container-saludables .hero__texto-saludables {
+  .heroSaludables .heroSaludables__texto {
     margin: auto;
     width: 70%;
     line-height: 97px;
@@ -461,84 +460,84 @@ body {
     height: 51rem;
     color: white;
     text-align: center; }
-    .main__container-saludables .hero__texto-saludables p {
+    .heroSaludables .heroSaludables__texto p {
       font-size: 80px;
       margin: 0; }
 
-.saludables__container-productos {
+.productosSaludables {
   background-color: #d9d9d9;
   padding: 2em;
   text-transform: uppercase; }
-  .saludables__container-productos h1 {
+  .productosSaludables h1 {
     text-align: center;
     font-size: 40px;
     color: black; }
-  .saludables__container-productos a {
+  .productosSaludables a {
     text-decoration: none;
     color: black;
     font-size: 20px;
     padding-top: 16px; }
-  .saludables__container-productos .productosSaludables-3img {
+  .productosSaludables .productosSaludables__3img {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     padding: 64px 0; }
-    .saludables__container-productos .productosSaludables-3img .almendras {
+    .productosSaludables .productosSaludables__3img .almendras {
       grid-column: 1;
       display: flex;
       flex-direction: column; }
-      .saludables__container-productos .productosSaludables-3img .almendras img {
+      .productosSaludables .productosSaludables__3img .almendras img {
         width: 200px;
         height: 260px; }
-        .saludables__container-productos .productosSaludables-3img .almendras img:hover {
+        .productosSaludables .productosSaludables__3img .almendras img:hover {
           scale: 1.2; }
-      .saludables__container-productos .productosSaludables-3img .almendras a {
+      .productosSaludables .productosSaludables__3img .almendras a {
         display: flex;
         justify-content: center; }
-    .saludables__container-productos .productosSaludables-3img .pecanas {
+    .productosSaludables .productosSaludables__3img .pecanas {
       grid-column: 2; }
-      .saludables__container-productos .productosSaludables-3img .pecanas img {
+      .productosSaludables .productosSaludables__3img .pecanas img {
         width: 300px;
         height: 260px; }
-        .saludables__container-productos .productosSaludables-3img .pecanas img:hover {
+        .productosSaludables .productosSaludables__3img .pecanas img:hover {
           scale: 1.2; }
-      .saludables__container-productos .productosSaludables-3img .pecanas a {
+      .productosSaludables .productosSaludables__3img .pecanas a {
         display: flex;
         justify-content: center; }
-    .saludables__container-productos .productosSaludables-3img .nueces {
+    .productosSaludables .productosSaludables__3img .nueces {
       grid-column: 3; }
-      .saludables__container-productos .productosSaludables-3img .nueces img {
+      .productosSaludables .productosSaludables__3img .nueces img {
         width: 200px;
         height: 260px; }
-        .saludables__container-productos .productosSaludables-3img .nueces img:hover {
+        .productosSaludables .productosSaludables__3img .nueces img:hover {
           scale: 1.2; }
-      .saludables__container-productos .productosSaludables-3img .nueces a {
+      .productosSaludables .productosSaludables__3img .nueces a {
         display: flex;
         justify-content: center; }
-  .saludables__container-productos .productosSaludables-2img {
+  .productosSaludables .productosSaludables__2img {
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 32px 0 64px 0; }
-    .saludables__container-productos .productosSaludables-2img .mani {
+    .productosSaludables .productosSaludables__2img .mani {
       grid-column: 2;
       display: flex;
       flex-direction: column;
       justify-content: center; }
-      .saludables__container-productos .productosSaludables-2img .mani img {
+      .productosSaludables .productosSaludables__2img .mani img {
         width: 300px;
         height: 260px; }
-        .saludables__container-productos .productosSaludables-2img .mani img:hover {
+        .productosSaludables .productosSaludables__2img .mani img:hover {
           scale: 1.2; }
-      .saludables__container-productos .productosSaludables-2img .mani a {
+      .productosSaludables .productosSaludables__2img .mani a {
         display: flex;
         justify-content: center; }
-    .saludables__container-productos .productosSaludables-2img .castanas {
+    .productosSaludables .productosSaludables__2img .castanas {
       grid-column: 1;
       display: flex;
       flex-direction: column;
       justify-content: center; }
-      .saludables__container-productos .productosSaludables-2img .castanas img:hover {
+      .productosSaludables .productosSaludables__2img .castanas img:hover {
         scale: 1.2; }
-      .saludables__container-productos .productosSaludables-2img .castanas a {
+      .productosSaludables .productosSaludables__2img .castanas a {
         display: flex;
         justify-content: center; }
 
@@ -563,22 +562,22 @@ body {
 
 /* VERSION MOBILE --------  */
 @media (max-width: 576px) {
-  .desktop__cabecera,
-  .saludables__container-productos {
+  .desktopCabecera,
+  .productosSaludables {
     display: none; }
-  .main__container-saludables {
+  .heroSaludables {
     background: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url("../imagenes/saludables/frutosSecos.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     /* height: 80vh; */
     height: 32rem; }
-    .main__container-saludables .hero__texto-saludables {
+    .heroSaludables .heroSaludables__texto {
       text-align: center;
       font-size: 32px;
       height: 40rem;
       line-height: normal; }
-      .main__container-saludables .hero__texto-saludables p {
+      .heroSaludables .heroSaludables__texto p {
         padding-bottom: 110px;
         font-size: 40px; }
   .favoritos-carrusel-mobile .contenedor-saludables {
@@ -625,7 +624,7 @@ body {
       padding: 15px;
       border-color: orangered; } }
 
-.combos__container {
+.combosContainer {
   padding-top: var(--padding-top);
   /*Para que la info no quede debajo de la navBar */
   background-color: white;
@@ -633,102 +632,105 @@ body {
   display: flex;
   flex-direction: column;
   text-transform: uppercase; }
-  .combos__container .combos__titulo {
+  .combosContainer .combosContainer__titulo {
     padding: 32px;
     text-align: center;
     font-size: 20px; }
-  .combos__container .combos__hero {
+  .combosContainer .combosContainer__hero {
     display: flex;
     padding: 32px;
     justify-content: space-around; }
-    .combos__container .combos__hero .combos__producto {
+    .combosContainer .combosContainer__hero .combosContainer__producto {
       width: 300px; }
-      .combos__container .combos__hero .combos__producto h2 {
+      .combosContainer .combosContainer__hero .combosContainer__producto h2 {
         padding: 8px;
         color: red; }
-      .combos__container .combos__hero .combos__producto p {
+      .combosContainer .combosContainer__hero .combosContainer__producto p {
         padding: 3.2px 16px;
         opacity: 0.6;
         max-width: 90%; }
-      .combos__container .combos__hero .combos__producto h3 {
+      .combosContainer .combosContainer__hero .combosContainer__producto h3 {
         color: red;
         text-align: right;
         font-size: 32px;
         padding-top: 1.6px;
         padding-left: 32px; }
-      .combos__container .combos__hero .combos__producto a {
+      .combosContainer .combosContainer__hero .combosContainer__producto a {
         width: 300px;
         height: 300px; }
-        .combos__container .combos__hero .combos__producto a img {
+        .combosContainer .combosContainer__hero .combosContainer__producto a img {
           width: 300px;
           height: 300px;
           border: 1px black solid; }
-          .combos__container .combos__hero .combos__producto a img:hover {
+          .combosContainer .combosContainer__hero .combosContainer__producto a img:hover {
             scale: 1.1; }
-      .combos__container .combos__hero .combos__producto button {
+      .combosContainer .combosContainer__hero .combosContainer__producto button {
         font-size: 21px;
         background-color: orangered;
         padding: 15px;
         cursor: pointer;
         border-radius: var(--radio-border);
         border: 0px; }
-        .combos__container .combos__hero .combos__producto button:hover {
+        .combosContainer .combosContainer__hero .combosContainer__producto button:hover {
           opacity: .7; }
 
 /* VERSION MOBILE --------  */
 @media (max-width: 576px) {
-  .desktop__cabecera {
+  .desktopCabecera {
     display: none; }
-  .combos__container {
+  .combosContainer {
     padding-top: 0;
     padding-bottom: 0;
     display: flex;
     flex-direction: column; }
-    .combos__container .combos__titulo {
+    .combosContainer .combosContainer__titulo {
       font-size: 25px;
       padding: 15px 0; }
-    .combos__container .combos__hero {
+    .combosContainer .combosContainer__hero {
       display: flex;
       align-items: center;
       flex-direction: column;
       padding-top: 0em; }
-      .combos__container .combos__hero .combos__producto {
+      .combosContainer .combosContainer__hero .combosContainer__producto {
         /* width: 100vw; */
         width: 100%;
         text-align: center;
         padding-bottom: 32px; }
-        .combos__container .combos__hero .combos__producto a img {
+        .combosContainer .combosContainer__hero .combosContainer__producto a img {
           text-align: center;
           border-color: white; }
-        .combos__container .combos__hero .combos__producto p {
+        .combosContainer .combosContainer__hero .combosContainer__producto p {
           opacity: 0.6;
           padding: 0;
           text-align: center;
           font-size: 20px;
           margin: 0;
           max-width: 100%; }
-        .combos__container .combos__hero .combos__producto .h2 {
+        .combosContainer .combosContainer__hero .combosContainer__producto .h2 {
           padding: 8px;
           font-size: 30px; }
-        .combos__container .combos__hero .combos__producto .h3 {
+        .combosContainer .combosContainer__hero .combosContainer__producto .h3 {
           color: orangered;
           text-align: center;
           font-size: 30px;
           padding-top: 10px;
           padding-left: 0;
           padding-bottom: 16px; }
-        .combos__container .combos__hero .combos__producto button {
+        .combosContainer .combosContainer__hero .combosContainer__producto button {
           font-size: 30px;
           background-color: orangered;
-          padding: 15px; } }
+          padding: 15px;
+          color: black;
+          text-transform: uppercase;
+          font-family: 'Barlow Condensed', sans-serif; } }
 
-.contacto__container {
+.contactoContainer {
   background-image: url("../imagenes/contacto/fondo.jpg");
   padding: 128px 0;
   display: grid;
   grid-template-columns: 25% 50% 25%;
   text-transform: uppercase; }
-  .contacto__container .contacto__columnaIzquierda {
+  .contactoContainer .contactoContainer__columnaIzquierda {
     grid-column: 1;
     padding: 32px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -737,35 +739,36 @@ body {
     align-items: center;
     color: white;
     font-size: 25px; }
-  .contacto__container .contacto__central {
+  .contactoContainer .contactoContainer__central {
     display: flex;
     justify-content: center;
     text-align: center;
     grid-column: 2;
     color: white; }
-    .contacto__container .contacto__central .contacto__columnaCentral {
+    .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral {
       display: flex;
       width: 50%;
       flex-direction: column;
       box-shadow: 7px 13px 37px black;
       background-color: #24303c; }
-      .contacto__container .contacto__central .contacto__columnaCentral h1 {
+      .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral h1 {
         font-size: 25px;
         padding-top: 15px; }
-      .contacto__container .contacto__central .contacto__columnaCentral label {
+      .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral label {
         padding-top: 18px;
         font-size: 20px; }
-      .contacto__container .contacto__central .contacto__columnaCentral input {
+      .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral input {
         font-size: 17px;
         margin: 20px;
-        padding: 8px; }
-      .contacto__container .contacto__central .contacto__columnaCentral .botonFormulario {
+        padding: 8px;
+        font-family: 'Barlow Condensed', sans-serif; }
+      .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral .botonFormulario {
         cursor: pointer; }
-        .contacto__container .contacto__central .contacto__columnaCentral .botonFormulario:hover {
+        .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral .botonFormulario:hover {
           opacity: .5; }
-      .contacto__container .contacto__central .contacto__columnaCentral .mensaje {
+      .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral .mensaje {
         height: 100px; }
-  .contacto__container .contacto__columnaDerecha {
+  .contactoContainer .contactoContainer__columnaDerecha {
     grid-column: 3;
     background-color: rgba(0, 0, 0, 0.6);
     text-align: center;
@@ -775,109 +778,109 @@ body {
     flex-direction: column;
     font-size: 25px;
     padding: 32px; }
-    .contacto__container .contacto__columnaDerecha h2 {
+    .contactoContainer .contactoContainer__columnaDerecha h2 {
       font-size: 20px;
       font-weight: bold; }
 
 /* VERSION MOBILE --------  */
 @media (max-width: 576px) {
-  .contacto__container {
+  .contactoContainer {
     background-image: url("../imagenes/contacto/fondo-mobile.jpg");
     display: flex;
     flex-direction: column;
     padding: 30px; }
-    .contacto__container .contacto__columnaIzquierda {
+    .contactoContainer .contactoContainer__columnaIzquierda {
       text-align: left;
       color: white;
       font-size: 25px;
       padding: 50px; }
-    .contacto__container .contacto__central {
+    .contactoContainer .contactoContainer__central {
       padding: 32px 0;
       font-family: 'Barlow Condensed', sans-serif; }
-      .contacto__container .contacto__central .contacto__columnaCentral {
+      .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral {
         width: 100%;
         padding: 50px; }
-        .contacto__container .contacto__central .contacto__columnaCentral h1 {
+        .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral h1 {
           font-size: 30px;
           padding-top: 15px; }
-        .contacto__container .contacto__central .contacto__columnaCentral label {
+        .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral label {
           padding-top: 18px;
           font-size: 25px; }
-        .contacto__container .contacto__central .contacto__columnaCentral input {
+        .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral input {
           font-size: 25px;
           margin: 10px;
           padding: 8px;
           font-family: 'Barlow Condensed', sans-serif; }
-    .contacto__container .contacto__columnaDerecha {
+    .contactoContainer .contactoContainer__columnaDerecha {
       font-size: 25px;
       line-height: 35px;
       text-align: left; }
-      .contacto__container .contacto__columnaDerecha h2 {
+      .contactoContainer .contactoContainer__columnaDerecha h2 {
         font-size: 20px;
         font-size: 30px; }
-      .contacto__container .contacto__columnaDerecha h3 {
+      .contactoContainer .contactoContainer__columnaDerecha h3 {
         padding: 16px 0;
         font-size: 30px; } }
 
-.almendras__container {
+.almendrasContainer {
   padding-top: var(--padding-top);
   /*Para que la info no quede debajo de la navBar */
   display: flex;
   flex-direction: column;
   text-transform: uppercase; }
-  .almendras__container .almendras__barraSuperior {
+  .almendrasContainer .almendrasContainer__barraSuperior {
     padding: 16px 0 0 16px;
     word-spacing: 15px; }
-    .almendras__container .almendras__barraSuperior a {
+    .almendrasContainer .almendrasContainer__barraSuperior a {
       text-decoration: none;
       color: black; }
-      .almendras__container .almendras__barraSuperior a:hover {
+      .almendrasContainer .almendrasContainer__barraSuperior a:hover {
         color: blue; }
-  .almendras__container .almendras__hero {
+  .almendrasContainer .almendrasContainer__hero {
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 32px; }
-    .almendras__container .almendras__hero .almendras__img {
+    .almendrasContainer .almendrasContainer__hero .almendrasContainer__img {
       grid-column: 1; }
-      .almendras__container .almendras__hero .almendras__img img {
+      .almendrasContainer .almendrasContainer__hero .almendrasContainer__img img {
         width: 90%;
         padding: 32px; }
-  .almendras__container .almendras__info {
+  .almendrasContainer .almendrasContainer__info {
     grid-column: 2;
     letter-spacing: 2px;
     padding: 32px; }
-    .almendras__container .almendras__info h1 {
+    .almendrasContainer .almendrasContainer__info h1 {
       font-size: 30px;
       padding-bottom: 10px;
       width: 80%; }
-    .almendras__container .almendras__info h2 {
+    .almendrasContainer .almendrasContainer__info h2 {
       font-size: 20px;
       padding-bottom: 10px; }
-    .almendras__container .almendras__info i {
+    .almendrasContainer .almendrasContainer__info i {
       cursor: pointer; }
-    .almendras__container .almendras__info h3 {
+    .almendrasContainer .almendrasContainer__info h3 {
       font-size: 15px;
       padding: 10px 0px;
       text-decoration: underline; }
-    .almendras__container .almendras__info ul {
+    .almendrasContainer .almendrasContainer__info ul {
       list-style: circle;
       line-height: 20px;
       padding-left: 20px;
       opacity: 0.6;
       padding-bottom: 25px; }
-    .almendras__container .almendras__info .almendras__precio {
+    .almendrasContainer .almendrasContainer__info .almendrasContainer__precio {
       display: flex;
       justify-content: space-between;
       color: orangered;
       font-size: 30px;
       padding-top: 25px; }
-      .almendras__container .almendras__info .almendras__precio p {
+      .almendrasContainer .almendrasContainer__info .almendrasContainer__precio p {
         padding-right: 150px; }
-    .almendras__container .almendras__info .almendras__boton {
+    .almendrasContainer .almendrasContainer__info .almendrasContainer__boton {
       display: flex;
       justify-content: center;
       padding-top: 20px; }
-      .almendras__container .almendras__info .almendras__boton button {
+      .almendrasContainer .almendrasContainer__info .almendrasContainer__boton button {
         font-size: 20px;
         width: 100%;
         padding: 16px;
@@ -887,52 +890,52 @@ body {
         cursor: pointer;
         text-transform: uppercase;
         font-family: 'Barlow Condensed', sans-serif; }
-        .almendras__container .almendras__info .almendras__boton button:hover {
+        .almendrasContainer .almendrasContainer__info .almendrasContainer__boton button:hover {
           opacity: 0.8; }
 
 /* VERSION MOBILE --------  */
 @media (max-width: 576px) {
-  .desktop__cabecera,
-  .almendras__barraSuperior,
-  .almendras__precio h4,
-  .almendras__boton,
-  .almendras__info, .menu-desplegable-mobile {
+  .desktopCabecera,
+  .almendrasContainer__barraSuperior,
+  .almendrasContainer__precio h4,
+  .almendrasContainer__boton,
+  .almendrasContainer__info, .mobileCabecera__menuDesplegable {
     display: none; }
-  .almendras__container {
+  .almendrasContainer {
     padding: 0; }
-    .almendras__container .almendras__hero {
+    .almendrasContainer .almendrasContainer__hero {
       display: flex;
       padding: 2rem 0 0;
       flex-direction: column; }
-      .almendras__container .almendras__hero .mobile-almendras__info {
+      .almendrasContainer .almendrasContainer__hero .mobileAlmendras__info {
         display: block;
         padding: 10px 20px; }
-        .almendras__container .almendras__hero .mobile-almendras__info h1 {
+        .almendrasContainer .almendrasContainer__hero .mobileAlmendras__info h1 {
           font-size: 24px; }
-        .almendras__container .almendras__hero .mobile-almendras__info h2 {
+        .almendrasContainer .almendrasContainer__hero .mobileAlmendras__info h2 {
           font-size: 20px;
           color: gray;
           padding-bottom: 10px; }
-        .almendras__container .almendras__hero .mobile-almendras__info i {
+        .almendrasContainer .almendrasContainer__hero .mobileAlmendras__info i {
           font-size: 20px; }
-      .almendras__container .almendras__hero .almendras__img img {
+      .almendrasContainer .almendrasContainer__hero .almendrasContainer__img img {
         padding: 20px 0;
         /* width: 100vw; */
         width: 100%; }
-      .almendras__container .almendras__hero .mobile-almendras__precio {
+      .almendrasContainer .almendrasContainer__hero .mobileAlmendras__precio {
         display: block;
         padding: 10px 20px; }
-        .almendras__container .almendras__hero .mobile-almendras__precio p {
+        .almendrasContainer .almendrasContainer__hero .mobileAlmendras__precio p {
           font-size: 40px;
           color: orangered; }
-      .almendras__container .almendras__hero .mobile-almendras__caracteristicas {
+      .almendrasContainer .almendrasContainer__hero .almendrasContainer__caracteristicas {
         display: block;
         padding: 50px 20px 0px 20px; }
-        .almendras__container .almendras__hero .mobile-almendras__caracteristicas h3 {
+        .almendrasContainer .almendrasContainer__hero .almendrasContainer__caracteristicas h3 {
           font-size: 25px;
           padding: 10px 0px;
           text-decoration: underline; }
-        .almendras__container .almendras__hero .mobile-almendras__caracteristicas ul {
+        .almendrasContainer .almendrasContainer__hero .almendrasContainer__caracteristicas ul {
           list-style: circle;
           line-height: 25px;
           padding-left: 20px;
@@ -953,45 +956,48 @@ body {
       border-radius: var(--radio-border);
       cursor: pointer;
       width: 70%;
-      border: none; }
-  .almendras__info hr {
+      border: none;
+      color: black;
+      text-transform: uppercase;
+      font-family: 'Barlow Condensed', sans-serif; }
+  .almendrasContainer__info hr {
     display: none; } }
 
-.footer-container {
+.footerContainer {
   background-color: #d9d9d9;
   text-align: center;
   text-transform: uppercase; }
-  .footer-container h2 {
+  .footerContainer h2 {
     font-size: 35px;
     padding-top: 20px; }
-  .footer-container .footer-redes {
+  .footerContainer .footerContainer__redes {
     padding: 16px 240px;
     font-size: 32px; }
-    .footer-container .footer-redes i {
+    .footerContainer .footerContainer__redes i {
       color: black; }
-  .footer-container .footer-contacto {
+  .footerContainer .footerContainer__contacto {
     background-color: black;
     padding: 24px 160px; }
-    .footer-container .footer-contacto a {
+    .footerContainer .footerContainer__contacto a {
       color: white;
       text-decoration: none;
       font-size: 30px; }
 
 /* VERSION MOBILE -------  */
 @media (max-width: 576px) {
-  .footer-container .h2 {
+  .footerContainer .h2 {
     font-size: 30px;
     padding-top: 20px; }
-  .footer-container .footer-redes {
+  .footerContainer .footerContainer__redes {
     display: flex;
     justify-content: space-around;
     padding: 16px;
     font-size: 30px; }
-  .footer-container .footer-contacto {
+  .footerContainer .footerContainer__contacto {
     display: flex;
     flex-direction: column;
     padding: 16px; }
-    .footer-container .footer-contacto a {
+    .footerContainer .footerContainer__contacto a {
       color: white;
       text-decoration: none;
       font-size: 30px;

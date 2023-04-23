@@ -1,10 +1,10 @@
-.contacto__container {
+.contactoContainer {
     background-image: url("../imagenes/contacto/fondo.jpg");
     padding: 128px 0;
     display: grid;
     grid-template-columns: 25% 50% 25%;
     text-transform: uppercase;
-    .contacto__columnaIzquierda {
+    .contactoContainer__columnaIzquierda {
         grid-column: 1;
         padding: 32px;
         background-color: $negro-transparencia-60;
@@ -14,13 +14,13 @@
         color: $blanco;
         font-size: 25px;
     }
-    .contacto__central {
+    .contactoContainer__central {
         display: flex;
         justify-content: center;
         text-align: center;
         grid-column: 2;
         color: $blanco;
-        .contacto__columnaCentral {
+        .contactoContainer__columnaCentral {
             display: flex;
             width: 50%;
             flex-direction: column;
@@ -33,11 +33,13 @@
             label {
                 padding-top: 18px;
                 font-size: 20px;
+                
             }
             input {
                 font-size: 17px;
                 margin: 20px;
                 padding: 8px;
+                font-family: 'Barlow Condensed', sans-serif;
             }
             .botonFormulario {
                 cursor: pointer;
@@ -50,7 +52,7 @@
             }
         }
     }
-    .contacto__columnaDerecha {
+    .contactoContainer__columnaDerecha {
         grid-column: 3;
         background-color: $negro-transparencia-60;
         text-align: center;
@@ -72,22 +74,22 @@
 
 @media (max-width: 576px) {
 
-.contacto__container {
+.contactoContainer {
     background-image: url("../imagenes/contacto/fondo-mobile.jpg");
     display: flex;
     flex-direction: column;
     padding: 30px;
     
-    .contacto__columnaIzquierda {
+    .contactoContainer__columnaIzquierda {
         text-align: left;
         color: white;
         font-size: 25px;
         padding: 50px;
     }
-    .contacto__central {
+    .contactoContainer__central {
         padding: 32px 0;
         font-family: 'Barlow Condensed', sans-serif;
-        .contacto__columnaCentral {
+        .contactoContainer__columnaCentral {
             width: 100%;
             padding: 50px;
             h1 {
@@ -107,7 +109,7 @@
             }
         }
     }
-    .contacto__columnaDerecha {
+    .contactoContainer__columnaDerecha {
         font-size: 25px;
         line-height: 35px;
         text-align: left;
