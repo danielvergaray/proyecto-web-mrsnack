@@ -27,10 +27,18 @@
 
             /*No modificar*/
             .texto-principal {
-                padding-bottom: 160px;
-                padding-top: 0;
+                // padding-bottom: 160px;
+                // padding-top: 0;
+                position: absolute;
+                padding: 0;
+                top: 30%;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
 
-                h5 {
+                h1 {
                     font-size: 80px;
                     margin: 0;
                 }
@@ -49,18 +57,34 @@
 
 
             .texto-principal-saludables {
-                padding-bottom: 150px;
-                padding-top: 0;
+                // padding-bottom: 150px;
+                // padding-top: 0;
+                position: absolute;
+                padding: 0;
+                top: 30%;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
 
                 a {
                     text-decoration: none;
                     color: $blanco;
+                    display: flex;
+                    justify-content: center;
+                
+                    
+                    
+                    h5 {
+                        font-size: 80px;
+                        width: 80%;
+                        
+                        
+                        
+                    }
                 }
 
-                h5 {
-                    font-size: 80px;
-                    margin: 0;
-                }
             }
         }
     }
@@ -303,11 +327,20 @@
             // }
         
             .texto-principal {
-                padding-bottom: 100px;
-                margin: 0;
+                // padding-bottom: 100px;
+                // margin: 0;
+                position: absolute;
+                padding: 0;
+                top: 0;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
         
-                h5 {
-                    font-size: 40px;
+                h1 {
+                    font-size: 20px;
+                    width: 80%;
                 }
             }
         
@@ -323,12 +356,25 @@
             }
         
             .texto-principal-saludables {
-                padding-bottom: 100px;
-                margin: 0;
-        
-                h5 {
-                    font-size: 40px;
+                // padding-bottom: 100px;
+                // margin: 0;
+                position: absolute;
+                padding: 0;
+                top: 0;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                a{
+                    width: 80%;
+                    h5 {
+                        // font-size: 40px;
+                        font-size: 20px;
+                        
+                    }
                 }
+        
             }
         
         }
@@ -365,10 +411,13 @@
         text-align: center;
     
         .carousel-favoritos-titulo {
+            display: flex;
+                position: relative;
+                justify-content: center;
+                top: 10%;
             h2 {
-                position: absolute;
-                top: 50px;
-                left: 20%;
+                
+                
                 color: $blanco;
                 font-size: 40px;
             }
