@@ -21,7 +21,7 @@
             li {
                 list-style: none;
                 padding-left: 40px;
-                
+
 
                 a {
                     &:hover {
@@ -33,6 +33,7 @@
 
                 .desktopCabecera__opcion-marcada {
                     margin: auto;
+
                     &::after {
                         // transform: translate3d(-50%, 0, 0);
                         content: ' ';

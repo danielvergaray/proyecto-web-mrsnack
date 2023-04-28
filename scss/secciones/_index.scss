@@ -1,5 +1,3 @@
-
-
 #carouselExampleCaptions {
     .carousel-indicators [data-bs-target] {
         width: 50px !important;
@@ -73,15 +71,15 @@
                     color: $blanco;
                     display: flex;
                     justify-content: center;
-                
-                    
-                    
-                    h5 {
+
+
+
+                    h2 {
                         font-size: 80px;
                         width: 80%;
-                        
-                        
-                        
+
+
+
                     }
                 }
 
@@ -310,212 +308,224 @@
     .extraContainer__derecha p,
     .extraContainer__izquierda button,
     .extraContainer__derecha button,
-    .section__favoritos{
+    .section__favoritos {
         display: none;
     }
-    
 
-#carouselExampleCaptions{
-    .carousel-inner{
-        .carousel1 {
-            /* height: 80vh; */
-            height: 32rem;
-        
-            // .carousel-caption {
-            //     font-size: 2rem;
-            //     /* No modificar*/
-            // }
-        
-            .texto-principal {
-                // padding-bottom: 100px;
-                // margin: 0;
-                position: absolute;
-                padding: 0;
-                top: 0;
-                left: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-        
-                h1 {
-                    font-size: 20px;
-                    width: 80%;
-                }
-            }
-        
-        }
-        
-        .carousel2 {
-            /* height: 80vh; */
-            height: 32rem;
-        
-            .carousel-caption {
-                font-size: 2rem;
-                /* No modificar*/
-            }
-        
-            .texto-principal-saludables {
-                // padding-bottom: 100px;
-                // margin: 0;
-                position: absolute;
-                padding: 0;
-                top: 0;
-                left: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                a{
-                    width: 80%;
-                    h5 {
-                        // font-size: 40px;
+
+    #carouselExampleCaptions {
+        .carousel-inner {
+            .carousel1 {
+                /* height: 80vh; */
+                height: 32rem;
+
+                // .carousel-caption {
+                //     font-size: 2rem;
+                //     /* No modificar*/
+                // }
+
+                .texto-principal {
+                    // padding-bottom: 100px;
+                    // margin: 0;
+                    position: absolute;
+                    padding: 0;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+
+                    h1 {
                         font-size: 20px;
-                        
+                        width: 80%;
                     }
                 }
-        
+
             }
-        
+
+            .carousel2 {
+                /* height: 80vh; */
+                height: 32rem;
+
+                .carousel-caption {
+                    font-size: 2rem;
+                    /* No modificar*/
+                }
+
+                .texto-principal-saludables {
+                    // padding-bottom: 100px;
+                    // margin: 0;
+                    position: absolute;
+                    padding: 0;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+
+                    a {
+                        width: 80%;
+
+                        h5 {
+                            // font-size: 40px;
+                            font-size: 20px;
+
+                        }
+                    }
+
+                }
+
+            }
         }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            scale: 1.5;
+            font-weight: 1000;
+        }
+
+        .flecha {
+            /* Para que la flecha derecha tenga una altura pequeña y pueda usar el menu hamburguesa*/
+            height: fit-content;
+            margin: auto;
+            width: fit-content;
+        }
+
     }
-    .carousel-control-prev,
-    .carousel-control-next {
-        scale: 1.5;
-        font-weight: 1000;
-    }
-    .flecha {
-        /* Para que la flecha derecha tenga una altura pequeña y pueda usar el menu hamburguesa*/
-        height: fit-content;
-        margin: auto;
-        width: fit-content;
-    }
-    
-}
 
 
-.favoritos-carrusel-mobile {
-    display: block;
-    .carousel-indicators [data-bs-target] {
-        height: 3px;
-    }
-    .carousel-contenedor-index {
-        background-color: $negro;
-        display: flex;
-        /* align-items: center; */
-        /* justify-content: center; */
-        flex-direction: column;
-        /* padding-top: 40px; */
-        /* padding-bottom: 40px; */
-        height: 32rem;
-        text-align: center;
-    
-        .carousel-favoritos-titulo {
+    .favoritos-carrusel-mobile {
+        display: block;
+
+        .carousel-indicators [data-bs-target] {
+            height: 3px;
+        }
+
+        .carousel-contenedor-index {
+            background-color: $negro;
             display: flex;
+            /* align-items: center; */
+            /* justify-content: center; */
+            flex-direction: column;
+            /* padding-top: 40px; */
+            /* padding-bottom: 40px; */
+            height: 32rem;
+            text-align: center;
+
+            .carousel-favoritos-titulo {
+                display: flex;
                 position: relative;
                 justify-content: center;
                 top: 10%;
-            h2 {
-                
-                
-                color: $blanco;
-                font-size: 40px;
+
+                h2 {
+
+
+                    color: $blanco;
+                    font-size: 40px;
+                }
+            }
+
+            .carousel-favoritos {
+                margin: auto;
+                padding-top: 50px;
+
+                .producto-favoritos-nombre {
+                    color: white;
+                    font-size: 1.5rem;
+                    padding-top: 10px;
+                }
+
+                .img-carousel {
+                    width: 140px;
+                    height: 180px;
+                }
+
+                .img-carousel-galletas {
+                    width: 160px;
+                    height: 180px;
+                }
             }
         }
-    
-        .carousel-favoritos {
-            margin: auto;
-            padding-top: 50px;
-    
-            .producto-favoritos-nombre {
-                color: white;
-                font-size: 1.5rem;
-                padding-top: 10px;
+
+    }
+
+
+
+    .index-flechaIzquierda {
+        position: absolute;
+        left: 20px;
+    }
+
+    .index-flechaDerecha {
+        position: absolute;
+        right: 20px;
+    }
+
+
+    .flecha {
+        /* Para que la flecha derecha tenga una alura pequeña y pueda usar el menu hamburguesa*/
+        height: fit-content;
+        margin: auto;
+    }
+
+    .extraContainer {
+        padding: 32px 0;
+
+        .extraContainer__imagenes {
+            display: flex;
+            flex-direction: column;
+
+            /* width: 100vw; */
+            .extraContainer__izquierda {
+                /* width: 100vw; */
+                height: 18rem;
+                padding: 16px 16px 96px;
+
+                h2 {
+                    font-size: 32px;
+                    /* width: 80vw; */
+                    color: white;
+                }
             }
-    
-            .img-carousel {
-                width: 140px;
-                height: 180px;
-            }
-    
-            .img-carousel-galletas {
-                width: 160px;
-                height: 180px;
+
+            .extraContainer__derecha {
+                margin-top: 20px;
+                height: 18rem;
+                padding: 16px 16px 96px;
+
+                h2 {
+                    font-size: 32px;
+                    /* width: 80vw; */
+                    color: white;
+                }
             }
         }
     }
-    
-}
 
 
 
-.index-flechaIzquierda {
-    position: absolute;
-    left: 20px;
-}
-
-.index-flechaDerecha {
-    position: absolute;
-    right: 20px;
-}
-
-
-.flecha {
-    /* Para que la flecha derecha tenga una alura pequeña y pueda usar el menu hamburguesa*/
-    height: fit-content;
-    margin: auto;
-}
-
-.extraContainer {
-    padding: 32px 0;
-    .extraContainer__imagenes {
+    .variosContainer {
+        background-color: black;
         display: flex;
+        color: white;
+        padding: 32px;
+        justify-content: space-between;
         flex-direction: column;
 
-        /* width: 100vw; */
-        .extraContainer__izquierda {
-            /* width: 100vw; */
-            height: 18rem;
-            padding: 16px 16px 96px;
-            h2 {
-                font-size: 32px;
-                /* width: 80vw; */
-                color: white;
-            }
+        p {
+            font-size: 24px;
+            color: white;
+            text-align: center;
         }
-        .extraContainer__derecha {
-            margin-top: 20px;
-            height: 18rem;
-            padding: 16px 16px 96px;
-            h2 {
-                font-size: 32px;
-                /* width: 80vw; */
-                color: white;
-            }
+
+        .varios__desktop-item {
+            width: 290px;
+            height: 290px;
         }
     }
-}
-    
-
-
-.variosContainer{
-    background-color: black;
-    display: flex;
-    color: white;
-    padding: 32px;
-    justify-content: space-between;
-    flex-direction: column;
-    p {
-        font-size: 24px;
-        color: white;
-        text-align: center;
-    }
-    .varios__desktop-item {
-        width: 290px;
-        height: 290px;
-    }
-}
 
 
 }
-

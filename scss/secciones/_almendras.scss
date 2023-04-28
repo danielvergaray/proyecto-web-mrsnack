@@ -40,13 +40,13 @@
         letter-spacing: 2px;
         padding: 32px;
 
-        h1 {
+        h2 {
             font-size: 30px;
             padding-bottom: 10px;
             width: 80%;
         }
 
-        h2 {
+        h3 {
             font-size: 20px;
             padding-bottom: 10px;
         }
@@ -200,10 +200,10 @@
     .almendras__boton-mobile {
         position: sticky;
         top: -100px;
-        bottom: 33px;
+        bottom: 1px;
         display: flex;
         justify-content: center;
-        padding-top: 20px;
+        padding: 20px 0;
 
         button {
             font-size: 25px;
