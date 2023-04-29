@@ -160,6 +160,9 @@ body {
       position: fixed;
       z-index: 600; } }
 
+.extraContainer-mobile {
+  display: none; }
+
 #carouselExampleCaptions .carousel-indicators [data-bs-target] {
   width: 50px !important;
   height: 6px;
@@ -248,15 +251,15 @@ body {
       width: 150px;
       height: 200px; }
 
-.extraContainer {
+.extraContainer-desktop {
   padding: 32px 8px;
   text-transform: uppercase; }
-  .extraContainer p {
+  .extraContainer-desktop p {
     color: white; }
-  .extraContainer .extraContainer__imagenes {
+  .extraContainer-desktop .extraContainer__imagenes {
     display: grid;
     grid-template-columns: 1fr 1fr; }
-    .extraContainer .extraContainer__imagenes .extraContainer__izquierda {
+    .extraContainer-desktop .extraContainer__imagenes .extraContainer__izquierda {
       grid-column: 1;
       background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../imagenes/index/catering.jpg");
       background-position: center center;
@@ -267,11 +270,11 @@ body {
       margin: auto;
       padding: 128px 48px 72px;
       color: white; }
-      .extraContainer .extraContainer__imagenes .extraContainer__izquierda p {
+      .extraContainer-desktop .extraContainer__imagenes .extraContainer__izquierda p {
         padding: 32px 0;
         font-size: 16px;
         line-height: 24px; }
-      .extraContainer .extraContainer__imagenes .extraContainer__izquierda button {
+      .extraContainer-desktop .extraContainer__imagenes .extraContainer__izquierda button {
         padding: 16px;
         font-size: 25px;
         margin: auto;
@@ -282,10 +285,10 @@ body {
         cursor: pointer;
         border-radius: var(--radio-border);
         width: fit-content; }
-        .extraContainer .extraContainer__imagenes .extraContainer__izquierda button:hover {
+        .extraContainer-desktop .extraContainer__imagenes .extraContainer__izquierda button:hover {
           background-color: orangered;
           border: orangered; }
-    .extraContainer .extraContainer__imagenes .extraContainer__derecha {
+    .extraContainer-desktop .extraContainer__imagenes .extraContainer__derecha {
       grid-column: 2;
       background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../imagenes/index/tienda.jpg");
       background-position: center center;
@@ -296,11 +299,11 @@ body {
       margin: auto;
       padding: 128px 48px 96px 48px;
       color: white; }
-      .extraContainer .extraContainer__imagenes .extraContainer__derecha p {
+      .extraContainer-desktop .extraContainer__imagenes .extraContainer__derecha p {
         padding: 32px 0;
         font-size: 16px;
         line-height: 24px; }
-      .extraContainer .extraContainer__imagenes .extraContainer__derecha button {
+      .extraContainer-desktop .extraContainer__imagenes .extraContainer__derecha button {
         padding: 16px;
         font-size: 25px;
         margin: auto;
@@ -311,7 +314,7 @@ body {
         cursor: pointer;
         border-radius: var(--radio-border);
         width: fit-content; }
-        .extraContainer .extraContainer__imagenes .extraContainer__derecha button:hover {
+        .extraContainer-desktop .extraContainer__imagenes .extraContainer__derecha button:hover {
           background-color: orangered;
           border: orangered; }
 
@@ -345,10 +348,7 @@ body {
 /* VERSION MOBILE --------  */
 @media (max-width: 576px) {
   .desktopCabecera,
-  .extraContainer__izquierda p,
-  .extraContainer__derecha p,
-  .extraContainer__izquierda button,
-  .extraContainer__derecha button,
+  .extraContainer-desktop,
   .section__favoritos {
     display: none; }
   #carouselExampleCaptions .carousel-inner .carousel1 {
@@ -439,25 +439,34 @@ body {
     /* Para que la flecha derecha tenga una alura pequeña y pueda usar el menu hamburguesa*/
     height: fit-content;
     margin: auto; }
-  .extraContainer {
-    padding: 32px 0; }
-    .extraContainer .extraContainer__imagenes {
+  .extraContainer-mobile {
+    display: block;
+    padding: 32px; }
+    .extraContainer-mobile .extraContainer__imagenes {
       display: flex;
       flex-direction: column;
       /* width: 100vw; */ }
-      .extraContainer .extraContainer__imagenes .extraContainer__izquierda {
+      .extraContainer-mobile .extraContainer__imagenes .extraContainer__izquierda-mobile {
         /* width: 100vw; */
+        background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../imagenes/index/catering.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
         height: 18rem;
         padding: 16px 16px 96px; }
-        .extraContainer .extraContainer__imagenes .extraContainer__izquierda h2 {
+        .extraContainer-mobile .extraContainer__imagenes .extraContainer__izquierda-mobile h2 {
           font-size: 32px;
           /* width: 80vw; */
           color: white; }
-      .extraContainer .extraContainer__imagenes .extraContainer__derecha {
+      .extraContainer-mobile .extraContainer__imagenes .extraContainer__derecha-mobile {
+        background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../imagenes/index/tienda.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
         margin-top: 20px;
         height: 18rem;
         padding: 16px 16px 96px; }
-        .extraContainer .extraContainer__imagenes .extraContainer__derecha h2 {
+        .extraContainer-mobile .extraContainer__imagenes .extraContainer__derecha-mobile h2 {
           font-size: 32px;
           /* width: 80vw; */
           color: white; }
