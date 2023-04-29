@@ -1,5 +1,7 @@
 .contactoContainer {
     background-image: url("../imagenes/contacto/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 128px 30px;
     display: grid;
     grid-template-columns: 25% 50% 25%;
