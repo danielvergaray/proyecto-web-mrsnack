@@ -711,7 +711,8 @@ body {
           border: 1px black solid;
           transition: scale 0.25s ease-in-out; }
           .combosContainer .combosContainer__hero .combosContainer__producto a img:hover {
-            scale: 1.1; }
+            scale: 1.1;
+            transition: scale 0.25s ease-in-out; }
       .combosContainer .combosContainer__hero .combosContainer__producto button {
         font-size: 21px;
         background-color: orangered;

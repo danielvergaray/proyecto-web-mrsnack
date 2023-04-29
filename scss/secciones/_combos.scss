@@ -52,6 +52,7 @@
                     
                     &:hover {
                         scale: 1.1;
+                        transition: scale 0.25s ease-in-out;
                         
                     }
                 }
