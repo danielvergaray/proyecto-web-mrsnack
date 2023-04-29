@@ -27,17 +27,10 @@
             .texto-principal {
                 // padding-bottom: 160px;
                 // padding-top: 0;
-                position: absolute;
-                padding: 0 100px;
-                top: 30%;
-                left: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
+                @extend .ubicacion-textos-grandes;
 
                 h1 {
-                    font-size: 80px;
+                    font-size: 60px;
                     margin: 0;
 
                 }
@@ -58,14 +51,7 @@
             .texto-principal-saludables {
                 // padding-bottom: 150px;
                 // padding-top: 0;
-                position: absolute;
-                padding: 0;
-                top: 30%;
-                left: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
+                @extend .ubicacion-textos-grandes;
 
                 a {
                     text-decoration: none;
@@ -76,8 +62,8 @@
 
 
                     h2 {
-                        font-size: 80px;
-                        width: 65%;
+                        font-size: 60px;
+
                         // width: 80%;
 
 
@@ -261,7 +247,7 @@
 .variosContainer {
     background-color: $negro;
     display: flex;
-    padding: 96px;
+    padding: 116px 96px;
     justify-content: space-around;
     text-transform: uppercase;
 
@@ -269,6 +255,8 @@
         font-size: 30px;
         color: $negro;
         text-align: center;
+        margin: 0;
+        padding-top: 20px;
     }
 
     .variosContainer__hover-imagenes {
@@ -279,8 +267,8 @@
 
             /* Para que el zoom se haga dentro del recuadro de la imagen*/
             .varios__desktop-item {
-                width: 17em;
-                height: 19em;
+                width: 12em;
+                height: 14em;
                 transition: 0.5s;
                 object-fit: cover;
 
@@ -295,6 +283,7 @@
             .variosContainer__hover-texto {
                 /* Texto se vuelve blanco cuando paso el mouse por la imagen*/
                 color: $blanco;
+
             }
         }
     }
@@ -370,7 +359,8 @@
                     a {
                         width: 80%;
 
-                        h5 {
+
+                        h2 {
                             // font-size: 40px;
                             font-size: 20px;
 
@@ -523,10 +513,16 @@
             text-align: center;
         }
 
-        .varios__desktop-item {
-            width: 290px;
-            height: 290px;
+        .variosContainer__hover-imagenes {
+            .variosContainer___imagenes {
+
+                .varios__desktop-item {
+                    width: 7em;
+                    height: 8em;
+                }
+            }
         }
+
     }
 
 

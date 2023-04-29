@@ -25,7 +25,8 @@
 
                 a {
                     &:hover {
-                        background-color: $azul;
+                        background-color: $rojo;
+                        padding: 10px;
                     }
 
 
@@ -33,17 +34,19 @@
 
                 .desktopCabecera__opcion-marcada {
                     margin: auto;
+                    background-color: $rojo;
+                    padding: 10px;
 
-                    &::after {
-                        // transform: translate3d(-50%, 0, 0);
-                        content: ' ';
-                        display: block;
-                        position: absolute;
-                        height: 4px;
-                        width: 50px;
-                        background: $rojo;
-                        text-align: center;
-                    }
+                    // &::after {
+                    //     // transform: translate3d(-50%, 0, 0);
+                    //     content: ' ';
+                    //     display: block;
+                    //     position: absolute;
+                    //     height: 4px;
+                    //     width: 50px;
+                    //     background: $rojo;
+                    //     text-align: center;
+                    // }
                 }
             }
         }
@@ -131,6 +134,7 @@
             z-index: 500;
             /* padding-top: 20vh; */
             padding-top: 38%;
+            padding-left: 0px;
             left: 0px;
             text-transform: uppercase;
 
@@ -147,6 +151,11 @@
                     font-weight: 600;
                     text-decoration: none;
                 }
+                .menuDesplegable__opcion-marcada{
+                    background-color: $rojo;
+                    padding: 10px;
+                }
+
             }
         }
 

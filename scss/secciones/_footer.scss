@@ -1,17 +1,18 @@
 .footerContainer {
-    background-color: gray;
+    background-color: #FFEEE2;
     text-align: center;
     text-transform: uppercase;
 
     h2 {
         font-size: 35px;
-        padding-top: 20px;
+        padding-top: 50px;
     }
 
     .footerContainer__redes {
         @extend .flex-spaceBetween;
-        padding: 16px 240px;
+        padding: 50px 240px;
         font-size: 32px;
+        
 
         i {
             color: $negro;
@@ -21,12 +22,24 @@
     .footerContainer__contacto {
         background-color: $negro;
         @extend .flex-spaceBetween;
+        align-items: center;
         padding: 24px 160px;
-
+        
+        height: 96px;
         a {
-            @include propiedades-menuFooter ($blanco, none, 30px) // color: $blanco;
-            // text-decoration: none;
-            // font-size: 30px;
+            height: fit-content;
+            @include propiedades-menuFooter ($blanco, none, 25px);
+            &:hover {
+                background-color: $rojo;
+                padding: 10px;
+                
+
+            }
+            
+        }
+        .desktopfooter__opcion-marcada {
+            background-color: $rojo;
+            padding: 10px;
         }
     }
 }
@@ -44,7 +57,7 @@
         .footerContainer__redes {
             display: flex;
             justify-content: space-around;
-            padding: 16px;
+            padding: 20px 16px 50px;
             font-size: 30px;
         }
 
@@ -52,6 +65,7 @@
             display: flex;
             flex-direction: column;
             padding: 16px;
+            height: 100%;
 
             a {
                 color: white;

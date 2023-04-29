@@ -8,12 +8,13 @@
     <meta name="keywords" content="almendras, precio, producto, carrito, almendras tostadas, natural">
     <meta name="description" content="precio online, precio, calificacion, almendras tostadas, producto natural">
     <title>Almendras | Mr. snack</title>
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/15199fa674.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../imagenes/index/logoNegro.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -34,7 +35,7 @@
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./saludables.html">Saludables</a></li>
                 <li><a href="./combos.html">Combos</a> </li>
-                <li><a href="./almendras.html">almendras</a> </li>
+                <li><a class="menuDesplegable__opcion-marcada" href="./almendras.html">almendras</a> </li>
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </div>
@@ -50,7 +51,7 @@
                     <li><a href="#">Salados</a></li>
                     <li><a href="./saludables.html">Saludables</a></li>
                     <li><a href="./combos.html">Combos</a></li>
-                    <li><a href="#">Boxes</a></li>
+                    <li><a class="desktopCabecera__opcion-marcada" href="./almendras.html">Almendras</a></li>
                 </ul>
             </nav>
 
@@ -140,9 +141,9 @@
         <div class="footerContainer">
             <h2>Conoce nuestras redes</h2>
             <div class="footerContainer__redes">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram" data-aos="fade-up" data-aos-duration="1000"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f" data-aos="fade-down" data-aos-duration="1000"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok" data-aos="fade-up" data-aos-duration="1000"></i></a>
             </div>
             <div class="footerContainer__contacto">
                 <a href="./contacto.html">Contactanos</a>
@@ -153,6 +154,10 @@
         </div>
         <!--------------------Footer desktop --------------------->
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
