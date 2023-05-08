@@ -958,7 +958,8 @@ body {
   .almendrasContainer__barraSuperior,
   .almendrasContainer__precio h4,
   .almendrasContainer__boton,
-  .almendrasContainer__info, .mobileCabecera__menuDesplegable {
+  .almendrasContainer__info,
+  .mobileCabecera__menuDesplegable {
     display: none; }
   .almendrasContainer {
     padding: 0;

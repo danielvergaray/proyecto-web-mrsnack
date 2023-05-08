@@ -12,7 +12,7 @@
         @extend .flex-spaceBetween;
         padding: 50px 240px;
         font-size: 32px;
-        
+
 
         i {
             color: $negro;
@@ -24,19 +24,22 @@
         @extend .flex-spaceBetween;
         align-items: center;
         padding: 24px 160px;
-        
+
         height: 96px;
+
         a {
             height: fit-content;
             @include propiedades-menuFooter ($blanco, none, 25px);
+
             &:hover {
                 background-color: $rojo;
                 padding: 10px;
-                
+
 
             }
-            
+
         }
+
         .desktopfooter__opcion-marcada {
             background-color: $rojo;
             padding: 10px;
